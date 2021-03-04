@@ -44,7 +44,6 @@ cv2.destroyAllWindows()
 import numpy as np
 from cv2 import cv2 as cv
 
-#please change your path to video you have downloaded here
 cap = cv.VideoCapture('/home/tuananh/Videos/OP.mp4')
 
 #settings for output video
@@ -53,7 +52,6 @@ frame_height = int(cap.get(4))
 fourcc = cv.VideoWriter_fourcc(*'MP4V')
 fps = 23
 
-#please change your path for your output video here
 out = cv.VideoWriter('/home/tuananh/Videos/OP.mp4',fourcc, fps, (frame_width,frame_height))
 
 while(True):
