@@ -1,5 +1,5 @@
 # Tạo Github Repo
-## [Github Repo](https://docs.github.com/en/github/getting-started-with-github/create-a-repo) `#f03c15`
+## [Github Repo](https://docs.github.com/en/github/getting-started-with-github/create-a-repo)
 # Cài đặt Ubuntu trên máy ảo
 ## [Ubuntu desktop](https://ubuntu.com/download/desktop)
 # Cài OpenCV trên python
