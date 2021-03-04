@@ -1,8 +1,8 @@
-# Tạo Github Repo
+Tạo Github Repo
 [Github Repo](https://docs.github.com/en/github/getting-started-with-github/create-a-repo)
-# Cài đặt Ubuntu trên máy ảo
+Cài đặt Ubuntu trên máy ảo
 [Ubuntu desktop](https://ubuntu.com/download/desktop)
-# Cài OpenCV trên python
+Cài OpenCV trên python
 [Open CV](https://pypi.org/project/opencv-python/)
 # Bài tập
 ## Read, Write and Display a video/webcam using OpenCV python
