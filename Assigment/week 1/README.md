@@ -3,7 +3,7 @@
 # Cài đặt Ubuntu trên máy ảo
 [Ubuntu desktop](https://ubuntu.com/download/desktop)
 # Cài OpenCV trên python
-[Open CV](https://docs.opencv.org/master/d2/de6/tutorial_py_setup_in_ubuntu.html)
+[Open CV](https://pypi.org/project/opencv-python/)
 # Bài tập
 ## Read, Write and Display a video/webcam using OpenCV python
 ### Read & Display
