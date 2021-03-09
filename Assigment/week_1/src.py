@@ -4,7 +4,7 @@ from cv2 import cv2
 def show_webcam(mirror=False):
     cam = cv2.VideoCapture(0)
     while True:
-        ret_val, img = cam.read()
+        _, img = cam.read()
         if mirror: 
             img = cv2.flip(img, 1)
         cv2.imshow('my webcam', img)
