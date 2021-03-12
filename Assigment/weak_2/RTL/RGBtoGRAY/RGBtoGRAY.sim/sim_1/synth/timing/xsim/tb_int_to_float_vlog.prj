@@ -1,0 +1,7 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"tb_int_to_float_time_synth.v" \
+"../../../../../RGBtoGRAY.srcs/sim_1/new/tb_int_to_float.v" \
+
+# Do not sort compile order
+nosort

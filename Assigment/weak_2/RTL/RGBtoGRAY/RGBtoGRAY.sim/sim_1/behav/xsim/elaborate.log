@@ -1,0 +1,15 @@
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: /tools/Xilinx/Vivado/2020.2/bin/unwrapped/lnx64.o/xelab -wto 3d60904b9a6f4f6b90fbb59e60cd47d3 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_int_to_float_behav xil_defaultlib.tb_int_to_float xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 8 for port 'int_input' [/home/theanhnp/RGBtoGRAY/RGBtoGRAY.srcs/sim_1/new/tb_int_to_float.v:33]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.int_to_float
+Compiling module xil_defaultlib.tb_int_to_float
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_int_to_float_behav

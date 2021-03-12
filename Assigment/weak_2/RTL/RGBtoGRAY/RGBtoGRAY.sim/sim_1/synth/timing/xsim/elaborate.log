@@ -1,0 +1,26 @@
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: /tools/Xilinx/Vivado/2020.2/bin/unwrapped/lnx64.o/xelab -wto 3d60904b9a6f4f6b90fbb59e60cd47d3 --incr --debug typical --relax --mt 8 --maxdelay -L xil_defaultlib -L simprims_ver -L secureip --snapshot tb_int_to_float_time_synth -transport_int_delays -pulse_r 0 -pulse_int_r 0 -pulse_e 0 -pulse_int_e 0 xil_defaultlib.tb_int_to_float xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 8 for port 'int_input' [/home/theanhnp/RGBtoGRAY/RGBtoGRAY.srcs/sim_1/new/tb_int_to_float.v:33]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+INFO: [XSIM 43-3451] SDF backannotation process started with SDF file "tb_int_to_float_time_synth.sdf", for root module "tb_int_to_float/my_int_to_float".
+INFO: [XSIM 43-3452] SDF backannotation was successful for SDF file "tb_int_to_float_time_synth.sdf", for root module "tb_int_to_float/my_int_to_float".
+Time Resolution for simulation is 1ps
+Compiling module simprims_ver.OBUF
+Compiling module simprims_ver.x_lut2_mux4
+Compiling module simprims_ver.LUT2
+Compiling module simprims_ver.LUT4
+Compiling module simprims_ver.LUT6
+Compiling module simprims_ver.x_lut3_mux8
+Compiling module simprims_ver.LUT3
+Compiling module simprims_ver.LUT5
+Compiling module simprims_ver.IBUF
+Compiling module xil_defaultlib.int_to_float
+Compiling module xil_defaultlib.tb_int_to_float
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_int_to_float_time_synth

@@ -1,0 +1,8 @@
+0.7
+2020.2
+Nov 18 2020
+09:20:35
+/home/theanhnp/RGBtoGRAY/RGBtoGRAY.sim/sim_1/behav/xsim/glbl.v,1605673889,verilog,,,,glbl,,,,,,,,
+/home/theanhnp/RGBtoGRAY/RGBtoGRAY.srcs/sim_1/new/tb_int_to_float.v,1615539213,verilog,,,,tb_int_to_float,,,,,,,,
+/home/theanhnp/RGBtoGRAY/RGBtoGRAY.srcs/sources_1/new/RGPtoGRAY.v,1615471165,verilog,,,,RGPtoGRAY,,,,,,,,
+/home/theanhnp/RGBtoGRAY/RGBtoGRAY.srcs/sources_1/new/int_to_float.v,1615539186,verilog,,/home/theanhnp/RGBtoGRAY/RGBtoGRAY.srcs/sim_1/new/tb_int_to_float.v,,int_to_float,,,,,,,,
