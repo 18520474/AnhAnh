@@ -18,14 +18,9 @@
 // Additional Comments:
 // 
 //////////////////////////////////////////////////////////////////////////////////
-
-
-//Integer to IEEE Floating Point Converter (Single Precision)
-//Copyright (C) Jonathan P Dawson 2013
-//2013-12-12
 module int_to_float(
-        int_input,
-        float_output
+        int_input,      /*8bit unsigned decimal*/
+        float_output    /*single-precision iee745*/  
         );
     input wire [7:0] int_input; 
     output wire [31:0] float_output;
