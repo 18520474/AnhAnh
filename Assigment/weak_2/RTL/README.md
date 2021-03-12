@@ -1,3 +1,52 @@
 # RTL module
 <img src="https://github.com/18520474/AnhAnh/blob/main/Assigment/weak_2/RTL/img/1.png">
+
+```verilog
+module rgb_to_gray_top(
+        clk,
+        rst,
+        input_valid,
+        output_valid,
+        R,
+        G,
+        B,
+        GRAY
+    );
+    input  wire        clk, rst, input_valid;
+    output wire        output_valid;
+    input  wire [7:0]  R, G, B;
+    output wire [31:0] GRAY;
+    
+    
+    wire [1:0] channel_mux, gain_mux; 
+    wire       load_reg_en,   r_turn_reg_en, g_turn_reg_en, 
+               b_turn_reg_en, result_reg_en;
+    rgb_to_gray_controller control(
+                    .clk(clk),
+                    .rst(rst),
+                    .input_valid(input_valid),
+                    .output_valid(output_valid),
+                    .channel_mux(channel_mux),
+                    .gain_mux(gain_mux),
+                    .load_reg_en(load_reg_en),
+                    .r_turn_reg_en(r_turn_reg_en),
+                    .g_turn_reg_en(g_turn_reg_en),
+                    .b_turn_reg_en(b_turn_reg_en),
+                    .result_reg_en(result_reg_en));
+    rgb_to_gray_datapath datapath(
+                    .clk(clk),
+                    .rst(rst),
+                    .channel_mux(channel_mux),
+                    .gain_mux(gain_mux),
+                    .load_reg_en(load_reg_en),
+                    .r_turn_reg_en(r_turn_reg_en),
+                    .g_turn_reg_en(g_turn_reg_en),
+                    .b_turn_reg_en(b_turn_reg_en),
+                    .result_reg_en(result_reg_en),
+                    .R(R),
+                    .G(G),
+                    .B(B),
+                    .GRAY(GRAY));
+endmodule
+
     
