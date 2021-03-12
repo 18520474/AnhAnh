@@ -1,16 +1,17 @@
 # RTL module
+## module accepts 8-bit RGB input 
 <img src="https://github.com/18520474/AnhAnh/blob/main/Assigment/weak_2/RTL/img/1.png">
 
 ```verilog
 module rgb_to_gray_top(
-        clk,
-        rst,
-        input_valid,
-        output_valid,
-        R,
-        G,
-        B,
-        GRAY
+        clk,                /*input clock*/
+        rst,                /*reset*/
+        input_valid,        /*input ready*/
+        output_valid,       /*output readly*/
+        R,                  /*R channel input*/
+        G,                  /*G channel input*/   
+        B,                  /*B channel input*/
+        GRAY                /*IEEE754 single-precision output Gray*/
     );
     input  wire        clk, rst, input_valid;
     output wire        output_valid;
