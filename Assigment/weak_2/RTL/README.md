@@ -1,9 +1,7 @@
 # RTL module
 ## module convert RGB to grayscale using verilog accepts 8-bit RGB input (R, G, B) and output IEEE754 single-precision standard at GRAY port. 
-## resource LUT 605
-<img src="https://github.com/18520474/AnhAnh/blob/main/Assigment/weak_2/RTL/img/2.png">
-
 ## latency: 6 clock per pixel
+<img src="https://github.com/18520474/AnhAnh/blob/main/Assigment/weak_2/RTL/img/2.png">
 <img src="https://github.com/18520474/AnhAnh/blob/main/Assigment/weak_2/RTL/img/1.png">
 
 ```verilog
