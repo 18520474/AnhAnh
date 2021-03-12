@@ -9,6 +9,7 @@
 ## schematic: 
 <img src="https://github.com/18520474/AnhAnh/blob/main/Assigment/weak_2/RTL/img/1.png">
 
+## top level module:
 ```verilog
 module rgb_to_gray_top(
         clk,                /*input clock*/
