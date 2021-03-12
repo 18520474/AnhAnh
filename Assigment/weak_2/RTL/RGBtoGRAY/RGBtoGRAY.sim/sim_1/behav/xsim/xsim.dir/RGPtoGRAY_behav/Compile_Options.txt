@@ -1,1 +1,0 @@
--wto "3d60904b9a6f4f6b90fbb59e60cd47d3" --incr --debug "typical" --relax --mt "8" -L "xil_defaultlib" -L "unisims_ver" -L "unimacro_ver" -L "secureip" --snapshot "RGPtoGRAY_behav" "xil_defaultlib.RGPtoGRAY" "xil_defaultlib.glbl" -log "elaborate.log" 
