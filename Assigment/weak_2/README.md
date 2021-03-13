@@ -1,5 +1,6 @@
 # HW
-## Python code
+## Convert RGB to Grayscale
+### Python code
 ``` python
 from cv2 import cv2
   
