@@ -2,26 +2,13 @@
 `include "rgb_to_gray_datapath.v"
 `include "rgb_to_gray_controller.v"
 //////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
+// Created by: Nguyen Pham The Anh 
 // 
 // Create Date: 03/12/2021 10:24:56 PM
-// Design Name: 
 // Module Name: rgb_to_gray_top
-// Project Name: 
-// Target Devices: 
-// Tool Versions: 
-// Description: 
-// 
-// Dependencies: 
-// 
-// Revision:
-// Revision 0.01 - File Created
-// Additional Comments:
-// 
+// Project Name: RGB to grayscale converter
+// Description: top-level module
 //////////////////////////////////////////////////////////////////////////////////
-
-
 module rgb_to_gray_top(
         clk,
         rst,

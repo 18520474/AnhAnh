@@ -1,22 +1,11 @@
 `timescale 1ns / 1ps
 //////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
+// Created by: Nguyen Pham The Anh 
 // 
-// Create Date: 03/11/2021 09:06:09 PM
-// Design Name: 
+// Create Date: 03/12/2021 11:15:04 PM
 // Module Name: int_to_float
-// Project Name: 
-// Target Devices: 
-// Tool Versions: 
-// Description: 
-// 
-// Dependencies: 
-// 
-// Revision:
-// Revision 0.01 - File Created
-// Additional Comments:
-// 
+// Project Name: RGB to grayscale converter
+// Description: 8 bit unsigned decimal to IEEE754 single-precision floatting point
 //////////////////////////////////////////////////////////////////////////////////
 module int_to_float(
         int_input,      /*8bit unsigned decimal*/

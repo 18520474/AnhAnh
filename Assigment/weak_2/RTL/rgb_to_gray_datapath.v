@@ -3,26 +3,13 @@
 `include "fp_adder.v"
 `include "int_to_float.v"
 //////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
+// Created by: Nguyen Pham The Anh 
 // 
 // Create Date: 03/12/2021 09:50:55 PM
-// Design Name: 
 // Module Name: rgb_to_gray_datapath
-// Project Name: 
-// Target Devices: 
-// Tool Versions: 
-// Description: 
-// 
-// Dependencies: 
-// 
-// Revision:
-// Revision 0.01 - File Created
-// Additional Comments:
-// 
+// Project Name: RGB to grayscale converter
+// Description: Datapath
 //////////////////////////////////////////////////////////////////////////////////
-
-
 module rgb_to_gray_datapath(
         clk,
         rst,

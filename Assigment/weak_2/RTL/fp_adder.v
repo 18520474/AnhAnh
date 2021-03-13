@@ -1,6 +1,6 @@
 `timescale 1ns / 1ps
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-//File Name: Addition-Subtraction.v
+//File Name: fp_adder.v
 //Created By: Sheetal Swaroop Burada
 //Date: 30-04-2019
 //Project Name: Design of 32 Bit Floating Point ALU Based on Standard IEEE-754 in Verilog and its implementation on FPGA.

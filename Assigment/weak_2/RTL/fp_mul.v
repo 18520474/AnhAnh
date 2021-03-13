@@ -1,22 +1,11 @@
 `timescale 1ns / 1ps
 //////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
+// Created by: Nguyen Pham The Anh 
 // 
 // Create Date: 03/12/2021 08:15:04 PM
-// Design Name: the anh
 // Module Name: fp_mul
-// Project Name: 
-// Target Devices: 
-// Tool Versions: 
+// Project Name: FPGA implement for exponential fuction
 // Description: single-cycle fp32 multiplier
-// 
-// Dependencies: 
-// 
-// Revision:
-// Revision 0.01 - File Created
-// Additional Comments: v1.4 
-// 
 //////////////////////////////////////////////////////////////////////////////////
 
 

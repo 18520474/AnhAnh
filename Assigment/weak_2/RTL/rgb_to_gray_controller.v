@@ -1,22 +1,11 @@
 `timescale 1ns / 1ps
 //////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
+// Created by: Nguyen Pham The Anh 
 // 
 // Create Date: 03/12/2021 09:20:17 PM
-// Design Name: 
 // Module Name: rgb_to_gray_controller
-// Project Name: 
-// Target Devices: 
-// Tool Versions: 
-// Description: 
-// 
-// Dependencies: 
-// 
-// Revision:
-// Revision 0.01 - File Created
-// Additional Comments:
-// 
+// Project Name: RGB to grayscale converter
+// Description: FSM controller
 //////////////////////////////////////////////////////////////////////////////////
 
 
