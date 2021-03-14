@@ -35,6 +35,7 @@ module rgb_to_gray_datapath(
     parameter r_gain =32'b00111110100110010000100101101100; /*0.2989*/ 
     parameter g_gain =32'b00111111000101100100010110100010; /*0.5870*/ 
     parameter b_gain =32'b00111101111010010111100011010101; /*0.1140*/ 
+    parameter scale  =32'b00111011100000001000000010000000; /*1/255*/
     
     parameter r_ss = 2'd0;
     parameter g_ss = 2'd1;
@@ -42,7 +43,7 @@ module rgb_to_gray_datapath(
     
     wire [31:0]   gain;
     wire [31:0]   channel;
-    wire [31:0]   turn_return_bus;
+    wire [31:0]   turn_return_bus, mul_bus;
     wire [31:0]   fp_add_bus, fp_add_result_bus;
     wire [31:0]   r_reg_bus, g_reg_bus, b_reg_bus;
     reg  [31:0]   r_reg, g_reg, b_reg;
@@ -60,7 +61,8 @@ module rgb_to_gray_datapath(
     int_to_float R_convert(.int_input(R), .float_output(r_reg_bus));
     int_to_float G_convert(.int_input(G), .float_output(g_reg_bus));
     int_to_float B_convert(.int_input(B), .float_output(b_reg_bus));
-    fp_mul       my_fp_mul(.A(channel), .B(gain), .OUT(turn_return_bus));
+    fp_mul       my_fp_mul(.A(channel), .B(gain), .OUT(mul_bus));
+    fp_mul       my_fp_mul_1(.A(mul_bus), .B(scale), .OUT(turn_return_bus)); /*scale fix*/
     fp_adder     my_fp_add_1(.a_operand(r_turn_reg),
                              .b_operand(g_turn_reg), 
                              .AddBar_Sub(1'b0), /*add mode*/	              
