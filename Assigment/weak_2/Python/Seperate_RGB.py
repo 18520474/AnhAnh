@@ -6,8 +6,11 @@ Red = open("Red.txt", "w")
 Green = open("Green.txt", "w")
 Blue = open("Blue.txt", "w")
 for i in r:
-    np.savetxt(Red,i,fmt='%d')
-for j in g:
-    np.savetxt(Green,j,fmt='%d')
-for k in b:
-    np.savetxt(Blue,k,fmt='%d')
+    for j in i:
+        Red.write(np.binary_repr(j, width=8) + '\n')
+for i in g:
+    for j in i:
+        Green.write(np.binary_repr(j, width=8) + '\n')
+for i in b:
+    for j in i:
+        Blue.write(np.binary_repr(j, width=8) + '\n')
