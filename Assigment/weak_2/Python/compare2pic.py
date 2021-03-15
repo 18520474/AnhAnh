@@ -19,10 +19,10 @@ for i in range(x):
         img2[i][j] = bin_to_float(line2)
 #ANH ANH Ahihi
 
-#if (x > 400) and (y > 400):
-    #cv2.imshow('Python', cv2.resize(img, (400,400), interpolation = cv2.INTER_AREA))
-    #cv2.imshow('RTL', cv2.resize(img2, (400,400), interpolation = cv2.INTER_AREA))
-#else:
+if (x > 400) and (y > 400):
+    cv2.imshow('Python', cv2.resize(img, (400,400), interpolation = cv2.INTER_AREA))
+    cv2.imshow('RTL', cv2.resize(img2, (400,400), interpolation = cv2.INTER_AREA))
+else:
     cv2.imshow('Python', img)
     cv2.imshow('RTL', img2)
 
