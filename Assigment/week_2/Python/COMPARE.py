@@ -11,33 +11,30 @@ def status(y, i):
         percent = (i / tmp) * 10
         print("procesing " + str(percent) + '%')
 
-def printimg(rtl_txt_path, python_txt_path):
-    Gray    = open(python_txt_path, "r")
-    Gray_RTL= open(rtl_txt_path, "r")
-    x = 1155
-    y = 1024
-    img = np.zeros((x , y))
-    img2 = np.zeros((x , y))
-    for i in range(x):
-        for j in range(y):
-            line = Gray.readline()
-            line2 = Gray_RTL.readline()
-            img[i][j] = bin_to_float(line)
-            img2[i][j] = bin_to_float(line2)
-        status(x, i)
+Gray     = open("text/Gray.txt", "r")
+Gray_RTL = open("text/Result.txt", "r")
+x = 1155
+y = 1024
+python_img  = np.zeros((x , y))
+rtl_img     = np.zeros((x , y))
 
-    if (x > 400) and (y > 400):
-        cv2.imshow('Python', cv2.resize(img, (400,400), interpolation = cv2.INTER_AREA))
-        cv2.imshow('RTL', cv2.resize(img2, (400,400), interpolation = cv2.INTER_AREA))
-    else:
-        cv2.imshow('Python', img)
-        cv2.imshow('RTL', img2)
+for i in range(x):
+    for j in range(y):
+        python_line       = Gray.readline()
+        rtl_line          = Gray_RTL.readline()
+        python_img[i][j]  = bin_to_float(python_line)
+        rtl_img[i][j]     = bin_to_float(rtl_line)
+    status(x, i)
 
-    cv2.waitKey(0)
-    cv2.destroyAllWindows()
+if (x > 400) and (y > 400):
+    cv2.imshow('Python', cv2.resize(python_img, (400,400), interpolation = cv2.INTER_AREA))
+    cv2.imshow('RTL',    cv2.resize(rtl_img,    (400,400), interpolation = cv2.INTER_AREA))
+else:
+    cv2.imshow('Python', python_img)
+    cv2.imshow('RTL', rtl_img)
 
-if __name__ == '__main__':
-    fire.Fire(printimg)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
 
 
 

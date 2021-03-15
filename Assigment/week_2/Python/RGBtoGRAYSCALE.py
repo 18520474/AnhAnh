@@ -19,10 +19,10 @@ def printimg(img):
     b,g,r = cv2.split(img)
     gray_img = rgb_to_grayscale(r, g, b)    #calulate gray img
 
-    Green = open("Green.txt", "w")
-    Blue  = open("Blue.txt" , "w")
-    Red   = open("Red.txt"  , "w")
-    Gray  = open("Gray.txt" , "w")
+    Green = open("text/Green.txt", "w")
+    Blue  = open("text/Blue.txt" , "w")
+    Red   = open("text/Red.txt"  , "w")
+    Gray  = open("text/Gray.txt" , "w")
 
     y, x, _ = img.shape            #get x, y resolusion
     gray_img = np.array(gray_img)  #create numpy array for storing gray img 
