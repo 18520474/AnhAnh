@@ -16,6 +16,7 @@ def status(y, i):
 def printimg(img):
     img   = cv2.imread(img)
     b,g,r = cv2.split(img)
+    gray_img = rgb_to_grayscale(r, g, b)    #calulate gray img
 
     Green = open("Green.txt", "w")
     Blue  = open("Blue.txt" , "w")
@@ -23,16 +24,15 @@ def printimg(img):
     Gray  = open("Gray.txt" , "w")
 
     y, x, _ = img.shape          #get x, y resolusion
-    gray_img = np.zeros((y, x))  #create numpy array for storing gray img 
+    gray_img = np.array(gray_img)  #create numpy array for storing gray img 
     for i in range(y):
         for j in range(x):
-            gray_img[i][j] = rgb_to_grayscale(r[i][j], g[i][j], b[i][j])    #calulate gray img
+            #tmp = np.copy(gray_img[i][j])
             Green.write(np.binary_repr(g[i][j], width=8) + '\n')            #write Green.txt
             Red.write(np.binary_repr(r[i][j], width=8) + '\n')              #write Red.txt
             Blue.write(np.binary_repr(b[i][j], width=8) + '\n')             #write Blue.txt
             Gray.write(float_to_bin(gray_img[i][j]) + '\n')                 #write Gray.txt
         status(y, i)                                                        #print process status
-
     if (x > 400) and (y > 400):
         cv2.imshow('origin', cv2.resize(img,      (400,400), interpolation = cv2.INTER_AREA))
         cv2.imshow('result', cv2.resize(gray_img, (400,400), interpolation = cv2.INTER_AREA))
