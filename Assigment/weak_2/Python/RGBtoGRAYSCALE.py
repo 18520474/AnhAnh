@@ -1,3 +1,4 @@
+#   AnhAnh
 from cv2 import cv2
 import numpy as np
 import struct
@@ -23,11 +24,10 @@ def printimg(img):
     Red   = open("Red.txt"  , "w")
     Gray  = open("Gray.txt" , "w")
 
-    y, x, _ = img.shape          #get x, y resolusion
+    y, x, _ = img.shape            #get x, y resolusion
     gray_img = np.array(gray_img)  #create numpy array for storing gray img 
     for i in range(y):
         for j in range(x):
-            #tmp = np.copy(gray_img[i][j])
             Green.write(np.binary_repr(g[i][j], width=8) + '\n')            #write Green.txt
             Red.write(np.binary_repr(r[i][j], width=8) + '\n')              #write Red.txt
             Blue.write(np.binary_repr(b[i][j], width=8) + '\n')             #write Blue.txt

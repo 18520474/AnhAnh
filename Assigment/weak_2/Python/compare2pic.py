@@ -4,6 +4,11 @@ import struct
 
 def bin_to_float(binary):
     return struct.unpack('!f', struct.pack('!I', int(binary, 2)))[0]
+def status(y, i):
+    tmp =  int(y / 10)
+    if(i % tmp == 0):
+        percent = (i / tmp) * 10
+        print("procesing " + str(percent) + '%')
 
 Gray = open("Gray.txt", "r")
 Gray_RTL= open("Result.txt", "r")
@@ -14,9 +19,10 @@ img2 = np.zeros((x , y))
 for i in range(x):
     for j in range(y):
         line = Gray.readline()
-        line2 = Gray_RTL.readline()
+        #line2 = Gray_RTL.readline()
         img[i][j] = bin_to_float(line)
-        img2[i][j] = bin_to_float(line2)
+        #img2[i][j] = bin_to_float(line2)
+    status(x, i)
 #ANH ANH Ahihi
 
 if (x > 400) and (y > 400):
