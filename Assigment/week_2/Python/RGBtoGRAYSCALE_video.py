@@ -16,20 +16,19 @@ def save_img(x, y, number, r, g, b, gray):
     Green = open(green_file_name, "w")
     Blue  = open(blue_file_name,  "w")
     Red   = open(red_file_name,   "w")
-    Gray  = open(gray_file_name, "w")
+    Gray  = open(gray_file_name,  "w")
     for i in range(y):
         for j in range(x):
             Green.write(np.binary_repr(g[i][j], width=8) + '\n')            #write Green.txt
-            Red.write(np.binary_repr(r[i][j], width=8) + '\n')              #write Red.tx
-            Blue.write(np.binary_repr(b[i][j], width=8) + '\n')             #write Blue.txt
-            Gray.write(float_to_bin(gray[i][j]) + '\n')                 #write Gray.txt
+            Red.write(np.binary_repr(r[i][j], width=8)   + '\n')            #write Red.tx
+            Blue.write(np.binary_repr(b[i][j], width=8)  + '\n')            #write Blue.txt
+            Gray.write(float_to_bin(gray[i][j])          + '\n')            #write Gray.txt
     print("frame" + str(number) + " --> done")
 
 cap = cv2.VideoCapture("video/source/spider.mp4")
 if (cap.isOpened() == False):
     print("video open fail")
 else:
-    #print(cap)
     number = 0
     ret, frame = cap.read()
     y, x, _ = frame.shape
@@ -44,5 +43,7 @@ else:
             ret, frame = cap.read()
             if cv2.waitKey(25) & 0xFF == ord('q') : # press Q to exit
                 break 
+        else:
+            break
 cap.release()
 cv2.destroyAllWindows()
