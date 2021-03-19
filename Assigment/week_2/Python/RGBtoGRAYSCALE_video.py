@@ -23,7 +23,7 @@ def save_img(x, y, number, r, g, b, gray):
             Red.write(np.binary_repr(r[i][j], width=8) + '\n')              #write Red.tx
             Blue.write(np.binary_repr(b[i][j], width=8) + '\n')             #write Blue.txt
             Gray.write(float_to_bin(gray[i][j]) + '\n')                 #write Gray.txt
-    print("frame" + str(number) + "--> done")
+    print("frame" + str(number) + " --> done")
 
 cap = cv2.VideoCapture("video/source/spider.mp4")
 if (cap.isOpened() == False):
@@ -40,11 +40,9 @@ else:
             cv2.imshow('origin video', frame)
             cv2.imshow('grayscale video', grayscale_frame)
             save_img(x, y, number, r, g, b, grayscale_frame)
-
             number = number + 1
             ret, frame = cap.read()
             if cv2.waitKey(25) & 0xFF == ord('q') : # press Q to exit
-                break
-    
+                break 
 cap.release()
 cv2.destroyAllWindows()
