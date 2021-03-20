@@ -8,6 +8,10 @@ def float_to_bin(num):
 def rgb_to_grayscale(r, g, b):
     G = (0.2989*r + 0.5870*g + 0.1140*b) / 255
     return G
+def save_info(x, y, number):
+    info = "video/text/info.txt" 
+    info = open(info, "w")
+    info.write("x = " + str(x) + '\n' + "y = " + str(y) + '\n' + "total frame = " + str(number))
 def save_img(x, y, number, r, g, b, gray):
     blue_file_name  = "video/text/blue/blue_"   + str(number) + ".txt" 
     green_file_name = "video/text/green/green_" + str(number) + ".txt" 
@@ -44,6 +48,7 @@ else:
             if cv2.waitKey(25) & 0xFF == ord('q') : # press Q to exit
                 break 
         else:
+            save_info(x, y, number)
             break
 cap.release()
 cv2.destroyAllWindows()
