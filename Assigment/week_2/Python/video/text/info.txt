@@ -1,3 +1,3 @@
-x = 854
-y = 480
-total frame = 90
+x = 640
+y = 360
+total frame = 150

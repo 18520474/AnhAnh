@@ -29,7 +29,7 @@ def save_img(x, y, number, r, g, b, gray):
             Gray.write(float_to_bin(gray[i][j])          + '\n')            #write Gray.txt
     print("frame" + str(number) + " --> done")
 
-cap = cv2.VideoCapture("video/source/spider.mp4")
+cap = cv2.VideoCapture("video/source/one_punch.mp4")
 if (cap.isOpened() == False):
     print("video open fail")
 else:
