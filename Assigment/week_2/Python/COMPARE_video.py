@@ -15,7 +15,7 @@ x      = int(info.readline()[4:])
 y      = int(info.readline()[4:])
 number = int(info.readline()[14:])
 
-print(x)
+print(y)
 
 base = 0
 python_video = np.zeros((y , x))
@@ -23,7 +23,7 @@ rtl_video = np.zeros((y , x))
 print(python_video.shape)
 for i in range(number):
     python_path = "video/text/gray/gray_" + str(i) + ".txt"
-    rtl_path    = "video/text/gray/gray_" + str(i) + ".txt"
+    rtl_path    = "video/text/Result/Result_" + str(i) + ".txt"
     python_frame = open(python_path, "r")
     rtl_frame    = open(rtl_path, "r")
     for y_ in range(y):

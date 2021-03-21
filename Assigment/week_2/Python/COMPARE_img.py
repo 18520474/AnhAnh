@@ -12,7 +12,7 @@ def status(y, i):
         print("procesing " + str(percent) + '%')
 
 Gray     = open("text/Gray.txt", "r")
-Gray_RTL = open("text/Result.txt", "r")
+Gray_RTL = open("text/Result_2.txt", "r")
 Compare = open("compare.txt", "w")
 x = 1155
 y = 1024
@@ -33,14 +33,15 @@ for i in range(x):
             max = test
         if (min > test):
             min = test
-        Compare.write(str(test) + '\n')
+        #Compare.write(str(test) + '\n')
         count = count + 1
         python_img[i][j]  = bin_to_float(python_line)
         rtl_img[i][j]     = bin_to_float(rtl_line)
     status(x, i)
-print("Sai so lon nhat " + str(max) + '\n')
-print("Sai so nho nhat " + str(min) + '\n')
-print("Sai so trung binh " + str(sum/count) + '\n')
+Compare.write("Sai so lon nhat " + str(max) + '\n')
+Compare.write("Sai so nho nhat " + str(min) + '\n')
+Compare.write("Sai so trung binh " + str(sum/count) + '\n')
+Compare.close()
 if (x > 400) and (y > 400):
     cv2.imshow('Python', cv2.resize(python_img, (400,400), interpolation = cv2.INTER_AREA))
     cv2.imshow('RTL',    cv2.resize(rtl_img,    (400,400), interpolation = cv2.INTER_AREA))
