@@ -21,15 +21,34 @@ base = 0
 python_video = np.zeros((y , x))
 rtl_video = np.zeros((y , x))
 print(python_video.shape)
+###############
+Compare = open("compare_vid.txt", "w")
+##############
 for i in range(number):
     python_path = "video/text/gray/gray_" + str(i) + ".txt"
     rtl_path    = "video/text/Result/Result_" + str(i) + ".txt"
     python_frame = open(python_path, "r")
     rtl_frame    = open(rtl_path, "r")
+##################
+    count = 0
+    sum = 0
+    max = 0
+    min =  float('inf')
+    Compare.write("---------Frame: " + str(i) + '\n')
+####################
     for y_ in range(y):
         for j in range(x):
             python_frame_line   = python_frame.readline()
             rtl_frame_line      = rtl_frame.readline()
+            ##############
+            test = (abs(bin_to_float(python_frame_line) - bin_to_float(rtl_frame_line)))
+            sum = sum + test
+            if (max < test):
+                max = test
+            if (min > test):
+                min = test
+            count = count + 1
+            ###############
             python_video[y_][j]  = copy.copy(bin_to_float(python_frame_line))
             rtl_video[y_][j]     = copy.copy(bin_to_float(rtl_frame_line))
     python_frame.close()
@@ -37,6 +56,9 @@ for i in range(number):
     cv2.imshow("python video", python_video)
     cv2.imshow("RTL video", rtl_video)
     status(number, i)
+    Compare.write("Sai so lon nhat " + str(max) + '\n')
+    Compare.write("Sai so nho nhat " + str(min) + '\n')
+    Compare.write("Sai so trung binh " + str(sum/count) + '\n')
     if cv2.waitKey(25) & 0xFF == ord('q') : # press Q to exit
         break 
 cv2.destroyAllWindows()

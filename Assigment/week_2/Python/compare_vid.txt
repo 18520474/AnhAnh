@@ -1,0 +1,600 @@
+---------Frame: 0
+Sai so lon nhat 1.7881393432617188e-07
+Sai so nho nhat 0.0
+Sai so trung binh 5.2543852386103634e-08
+---------Frame: 1
+Sai so lon nhat 1.7881393432617188e-07
+Sai so nho nhat 0.0
+Sai so trung binh 5.2682891893912e-08
+---------Frame: 2
+Sai so lon nhat 1.7881393432617188e-07
+Sai so nho nhat 0.0
+Sai so trung binh 5.2592659913999445e-08
+---------Frame: 3
+Sai so lon nhat 1.7881393432617188e-07
+Sai so nho nhat 0.0
+Sai so trung binh 5.2385909536193744e-08
+---------Frame: 4
+Sai so lon nhat 1.7881393432617188e-07
+Sai so nho nhat 0.0
+Sai so trung binh 5.2482910177786834e-08
+---------Frame: 5
+Sai so lon nhat 1.7881393432617188e-07
+Sai so nho nhat 0.0
+Sai so trung binh 5.234031151404552e-08
+---------Frame: 6
+Sai so lon nhat 1.7881393432617188e-07
+Sai so nho nhat 0.0
+Sai so trung binh 6.985236217992173e-08
+---------Frame: 7
+Sai so lon nhat 1.7881393432617188e-07
+Sai so nho nhat 0.0
+Sai so trung binh 7.095416852583488e-08
+---------Frame: 8
+Sai so lon nhat 1.7881393432617188e-07
+Sai so nho nhat 0.0
+Sai so trung binh 7.087759311414427e-08
+---------Frame: 9
+Sai so lon nhat 1.7881393432617188e-07
+Sai so nho nhat 0.0
+Sai so trung binh 7.105890997788972e-08
+---------Frame: 10
+Sai so lon nhat 1.7881393432617188e-07
+Sai so nho nhat 0.0
+Sai so trung binh 7.095887364509206e-08
+---------Frame: 11
+Sai so lon nhat 1.7881393432617188e-07
+Sai so nho nhat 0.0
+Sai so trung binh 7.09780821731935e-08
+---------Frame: 12
+Sai so lon nhat 1.7881393432617188e-07
+Sai so nho nhat 0.0
+Sai so trung binh 7.085364712919626e-08
+---------Frame: 13
+Sai so lon nhat 1.7881393432617188e-07
+Sai so nho nhat 0.0
+Sai so trung binh 7.078793714754284e-08
+---------Frame: 14
+Sai so lon nhat 1.7881393432617188e-07
+Sai so nho nhat 0.0
+Sai so trung binh 7.134440238587558e-08
+---------Frame: 15
+Sai so lon nhat 1.7881393432617188e-07
+Sai so nho nhat 0.0
+Sai so trung binh 7.127946850636767e-08
+---------Frame: 16
+Sai so lon nhat 1.7881393432617188e-07
+Sai so nho nhat 0.0
+Sai so trung binh 7.053997251205147e-08
+---------Frame: 17
+Sai so lon nhat 1.7881393432617188e-07
+Sai so nho nhat 0.0
+Sai so trung binh 7.124260365445581e-08
+---------Frame: 18
+Sai so lon nhat 1.7881393432617188e-07
+Sai so nho nhat 0.0
+Sai so trung binh 7.13308205983291e-08
+---------Frame: 19
+Sai so lon nhat 1.7881393432617188e-07
+Sai so nho nhat 0.0
+Sai so trung binh 7.152756249221663e-08
+---------Frame: 20
+Sai so lon nhat 1.7881393432617188e-07
+Sai so nho nhat 0.0
+Sai so trung binh 7.125191688020196e-08
+---------Frame: 21
+Sai so lon nhat 1.7881393432617188e-07
+Sai so nho nhat 0.0
+Sai so trung binh 7.169028524205916e-08
+---------Frame: 22
+Sai so lon nhat 1.7881393432617188e-07
+Sai so nho nhat 0.0
+Sai so trung binh 7.18725398958971e-08
+---------Frame: 23
+Sai so lon nhat 1.7881393432617188e-07
+Sai so nho nhat 0.0
+Sai so trung binh 7.176142793873118e-08
+---------Frame: 24
+Sai so lon nhat 1.7881393432617188e-07
+Sai so nho nhat 0.0
+Sai so trung binh 7.166739022876654e-08
+---------Frame: 25
+Sai so lon nhat 1.7881393432617188e-07
+Sai so nho nhat 0.0
+Sai so trung binh 7.162496331147849e-08
+---------Frame: 26
+Sai so lon nhat 1.7881393432617188e-07
+Sai so nho nhat 0.0
+Sai so trung binh 7.162004799789024e-08
+---------Frame: 27
+Sai so lon nhat 1.7881393432617188e-07
+Sai so nho nhat 0.0
+Sai so trung binh 7.127468254313701e-08
+---------Frame: 28
+Sai so lon nhat 1.7881393432617188e-07
+Sai so nho nhat 0.0
+Sai so trung binh 7.188081831878258e-08
+---------Frame: 29
+Sai so lon nhat 1.7881393432617188e-07
+Sai so nho nhat 0.0
+Sai so trung binh 7.203329005278647e-08
+---------Frame: 30
+Sai so lon nhat 1.7881393432617188e-07
+Sai so nho nhat 0.0
+Sai so trung binh 7.220028136442933e-08
+---------Frame: 31
+Sai so lon nhat 1.7881393432617188e-07
+Sai so nho nhat 0.0
+Sai so trung binh 7.20953782244275e-08
+---------Frame: 32
+Sai so lon nhat 1.7881393432617188e-07
+Sai so nho nhat 0.0
+Sai so trung binh 7.204260327853262e-08
+---------Frame: 33
+Sai so lon nhat 1.7881393432617188e-07
+Sai so nho nhat 0.0
+Sai so trung binh 7.214608356460101e-08
+---------Frame: 34
+Sai so lon nhat 1.7881393432617188e-07
+Sai so nho nhat 0.0
+Sai so trung binh 7.213004412026041e-08
+---------Frame: 35
+Sai so lon nhat 1.7881393432617188e-07
+Sai so nho nhat 0.0
+Sai so trung binh 7.234411896206438e-08
+---------Frame: 36
+Sai so lon nhat 1.7881393432617188e-07
+Sai so nho nhat 0.0
+Sai so trung binh 6.989508013551434e-08
+---------Frame: 37
+Sai so lon nhat 1.7881393432617188e-07
+Sai so nho nhat 0.0
+Sai so trung binh 6.807253359713488e-08
+---------Frame: 38
+Sai so lon nhat 1.7881393432617188e-07
+Sai so nho nhat 0.0
+Sai so trung binh 7.201319224097663e-08
+---------Frame: 39
+Sai so lon nhat 1.7881393432617188e-07
+Sai so nho nhat 0.0
+Sai so trung binh 4.7158786805488896e-08
+---------Frame: 40
+Sai so lon nhat 1.7881393432617188e-07
+Sai so nho nhat 0.0
+Sai so trung binh 4.37661334571102e-08
+---------Frame: 41
+Sai so lon nhat 1.7881393432617188e-07
+Sai so nho nhat 0.0
+Sai so trung binh 4.389999895061515e-08
+---------Frame: 42
+Sai so lon nhat 1.7881393432617188e-07
+Sai so nho nhat 0.0
+Sai so trung binh 4.2467288873619205e-08
+---------Frame: 43
+Sai so lon nhat 1.7881393432617188e-07
+Sai so nho nhat 0.0
+Sai so trung binh 4.378192910634324e-08
+---------Frame: 44
+Sai so lon nhat 1.7881393432617188e-07
+Sai so nho nhat 0.0
+Sai so trung binh 4.334586883992921e-08
+---------Frame: 45
+Sai so lon nhat 1.7881393432617188e-07
+Sai so nho nhat 0.0
+Sai so trung binh 4.355904631362743e-08
+---------Frame: 46
+Sai so lon nhat 1.7881393432617188e-07
+Sai so nho nhat 0.0
+Sai so trung binh 4.3654308809790464e-08
+---------Frame: 47
+Sai so lon nhat 1.7881393432617188e-07
+Sai so nho nhat 0.0
+Sai so trung binh 4.3611643402780626e-08
+---------Frame: 48
+Sai so lon nhat 1.7881393432617188e-07
+Sai so nho nhat 0.0
+Sai so trung binh 4.354490266046519e-08
+---------Frame: 49
+Sai so lon nhat 1.7881393432617188e-07
+Sai so nho nhat 0.0
+Sai so trung binh 4.3584960849329945e-08
+---------Frame: 50
+Sai so lon nhat 1.7881393432617188e-07
+Sai so nho nhat 0.0
+Sai so trung binh 4.371083491605532e-08
+---------Frame: 51
+Sai so lon nhat 1.7881393432617188e-07
+Sai so nho nhat 0.0
+Sai so trung binh 4.370849852522143e-08
+---------Frame: 52
+Sai so lon nhat 1.7881393432617188e-07
+Sai so nho nhat 0.0
+Sai so trung binh 4.3958839973533435e-08
+---------Frame: 53
+Sai so lon nhat 1.7881393432617188e-07
+Sai so nho nhat 0.0
+Sai so trung binh 4.410596792088957e-08
+---------Frame: 54
+Sai so lon nhat 1.7881393432617188e-07
+Sai so nho nhat 0.0
+Sai so trung binh 4.39114896582598e-08
+---------Frame: 55
+Sai so lon nhat 1.7881393432617188e-07
+Sai so nho nhat 0.0
+Sai so trung binh 4.334136178840709e-08
+---------Frame: 56
+Sai so lon nhat 1.7881393432617188e-07
+Sai so nho nhat 0.0
+Sai so trung binh 4.338615339191973e-08
+---------Frame: 57
+Sai so lon nhat 1.7881393432617188e-07
+Sai so nho nhat 0.0
+Sai so trung binh 4.333264478696543e-08
+---------Frame: 58
+Sai so lon nhat 1.7881393432617188e-07
+Sai so nho nhat 0.0
+Sai so trung binh 4.3241343645503444e-08
+---------Frame: 59
+Sai so lon nhat 1.7881393432617188e-07
+Sai so nho nhat 0.0
+Sai so trung binh 4.329565664799399e-08
+---------Frame: 60
+Sai so lon nhat 1.7881393432617188e-07
+Sai so nho nhat 0.0
+Sai so trung binh 4.326123732628023e-08
+---------Frame: 61
+Sai so lon nhat 1.7881393432617188e-07
+Sai so nho nhat 0.0
+Sai so trung binh 4.339550325009138e-08
+---------Frame: 62
+Sai so lon nhat 1.7881393432617188e-07
+Sai so nho nhat 0.0
+Sai so trung binh 4.3511821559150124e-08
+---------Frame: 63
+Sai so lon nhat 1.7881393432617188e-07
+Sai so nho nhat 0.0
+Sai so trung binh 4.3270554846862476e-08
+---------Frame: 64
+Sai so lon nhat 1.7881393432617188e-07
+Sai so nho nhat 0.0
+Sai so trung binh 4.267074309104323e-08
+---------Frame: 65
+Sai so lon nhat 1.7881393432617188e-07
+Sai so nho nhat 0.0
+Sai so trung binh 4.344273027830544e-08
+---------Frame: 66
+Sai so lon nhat 1.7881393432617188e-07
+Sai so nho nhat 0.0
+Sai so trung binh 6.283488801273052e-08
+---------Frame: 67
+Sai so lon nhat 1.7881393432617188e-07
+Sai so nho nhat 0.0
+Sai so trung binh 6.250277692743111e-08
+---------Frame: 68
+Sai so lon nhat 1.7881393432617188e-07
+Sai so nho nhat 0.0
+Sai so trung binh 6.267888743928376e-08
+---------Frame: 69
+Sai so lon nhat 1.7881393432617188e-07
+Sai so nho nhat 0.0
+Sai so trung binh 6.265867644591101e-08
+---------Frame: 70
+Sai so lon nhat 1.7881393432617188e-07
+Sai so nho nhat 0.0
+Sai so trung binh 6.263929814546525e-08
+---------Frame: 71
+Sai so lon nhat 1.7881393432617188e-07
+Sai so nho nhat 0.0
+Sai so trung binh 6.26868990770567e-08
+---------Frame: 72
+Sai so lon nhat 1.7881393432617188e-07
+Sai so nho nhat 0.0
+Sai so trung binh 6.26868182330832e-08
+---------Frame: 73
+Sai so lon nhat 1.7881393432617188e-07
+Sai so nho nhat 0.0
+Sai so trung binh 6.289527037653089e-08
+---------Frame: 74
+Sai so lon nhat 1.7881393432617188e-07
+Sai so nho nhat 0.0
+Sai so trung binh 6.295360738780194e-08
+---------Frame: 75
+Sai so lon nhat 1.7881393432617188e-07
+Sai so nho nhat 0.0
+Sai so trung binh 6.298387537147694e-08
+---------Frame: 76
+Sai so lon nhat 1.7881393432617188e-07
+Sai so nho nhat 0.0
+Sai so trung binh 6.159290630118145e-08
+---------Frame: 77
+Sai so lon nhat 1.7881393432617188e-07
+Sai so nho nhat 0.0
+Sai so trung binh 6.23675279914298e-08
+---------Frame: 78
+Sai so lon nhat 1.7881393432617188e-07
+Sai so nho nhat 0.0
+Sai so trung binh 6.131031518129425e-08
+---------Frame: 79
+Sai so lon nhat 1.7881393432617188e-07
+Sai so nho nhat 0.0
+Sai so trung binh 5.969065467878762e-08
+---------Frame: 80
+Sai so lon nhat 1.7881393432617188e-07
+Sai so nho nhat 0.0
+Sai so trung binh 5.958297050609771e-08
+---------Frame: 81
+Sai so lon nhat 1.7881393432617188e-07
+Sai so nho nhat 0.0
+Sai so trung binh 5.987019297511627e-08
+---------Frame: 82
+Sai so lon nhat 1.7881393432617188e-07
+Sai so nho nhat 0.0
+Sai so trung binh 5.973925807565036e-08
+---------Frame: 83
+Sai so lon nhat 1.7881393432617188e-07
+Sai so nho nhat 0.0
+Sai so trung binh 6.034612144705736e-08
+---------Frame: 84
+Sai so lon nhat 1.7881393432617188e-07
+Sai so nho nhat 0.0
+Sai so trung binh 6.078731934798675e-08
+---------Frame: 85
+Sai so lon nhat 1.7881393432617188e-07
+Sai so nho nhat 0.0
+Sai so trung binh 6.820440224449461e-08
+---------Frame: 86
+Sai so lon nhat 1.7881393432617188e-07
+Sai so nho nhat 0.0
+Sai so trung binh 5.815929082725941e-08
+---------Frame: 87
+Sai so lon nhat 1.7881393432617188e-07
+Sai so nho nhat 0.0
+Sai so trung binh 6.661050267414086e-08
+---------Frame: 88
+Sai so lon nhat 1.1920928955078125e-07
+Sai so nho nhat 0.0
+Sai so trung binh 5.3356731970982054e-08
+---------Frame: 89
+Sai so lon nhat 1.7881393432617188e-07
+Sai so nho nhat 0.0
+Sai so trung binh 6.476210728578735e-08
+---------Frame: 90
+Sai so lon nhat 1.7881393432617188e-07
+Sai so nho nhat 0.0
+Sai so trung binh 5.8371695104142417e-08
+---------Frame: 91
+Sai so lon nhat 1.7881393432617188e-07
+Sai so nho nhat 0.0
+Sai so trung binh 5.838383786896076e-08
+---------Frame: 92
+Sai so lon nhat 1.7881393432617188e-07
+Sai so nho nhat 0.0
+Sai so trung binh 5.836188064576062e-08
+---------Frame: 93
+Sai so lon nhat 1.7881393432617188e-07
+Sai so nho nhat 0.0
+Sai so trung binh 5.819197895107209e-08
+---------Frame: 94
+Sai so lon nhat 1.7881393432617188e-07
+Sai so nho nhat 0.0
+Sai so trung binh 5.810214512772897e-08
+---------Frame: 95
+Sai so lon nhat 1.7881393432617188e-07
+Sai so nho nhat 0.0
+Sai so trung binh 5.813700100689958e-08
+---------Frame: 96
+Sai so lon nhat 1.7881393432617188e-07
+Sai so nho nhat 0.0
+Sai so trung binh 5.811475274539488e-08
+---------Frame: 97
+Sai so lon nhat 1.7881393432617188e-07
+Sai so nho nhat 0.0
+Sai so trung binh 5.8099748103914965e-08
+---------Frame: 98
+Sai so lon nhat 1.7881393432617188e-07
+Sai so nho nhat 0.0
+Sai so trung binh 5.811339456664023e-08
+---------Frame: 99
+Sai so lon nhat 1.7881393432617188e-07
+Sai so nho nhat 0.0
+Sai so trung binh 5.810899665448233e-08
+---------Frame: 100
+Sai so lon nhat 1.7881393432617188e-07
+Sai so nho nhat 0.0
+Sai so trung binh 5.7934600034867695e-08
+---------Frame: 101
+Sai so lon nhat 1.7881393432617188e-07
+Sai so nho nhat 0.0
+Sai so trung binh 5.724800505251753e-08
+---------Frame: 102
+Sai so lon nhat 1.7881393432617188e-07
+Sai so nho nhat 0.0
+Sai so trung binh 4.2339505120657526e-08
+---------Frame: 103
+Sai so lon nhat 1.7881393432617188e-07
+Sai so nho nhat 0.0
+Sai so trung binh 4.193869686888421e-08
+---------Frame: 104
+Sai so lon nhat 1.7881393432617188e-07
+Sai so nho nhat 0.0
+Sai so trung binh 4.1923417357894424e-08
+---------Frame: 105
+Sai so lon nhat 1.7881393432617188e-07
+Sai so nho nhat 0.0
+Sai so trung binh 4.1967724150203546e-08
+---------Frame: 106
+Sai so lon nhat 1.7881393432617188e-07
+Sai so nho nhat 0.0
+Sai so trung binh 4.189711072892048e-08
+---------Frame: 107
+Sai so lon nhat 1.7881393432617188e-07
+Sai so nho nhat 0.0
+Sai so trung binh 4.186225080755119e-08
+---------Frame: 108
+Sai so lon nhat 1.7881393432617188e-07
+Sai so nho nhat 0.0
+Sai so trung binh 4.187525051848853e-08
+---------Frame: 109
+Sai so lon nhat 1.7881393432617188e-07
+Sai so nho nhat 0.0
+Sai so trung binh 4.188790260033986e-08
+---------Frame: 110
+Sai so lon nhat 1.7881393432617188e-07
+Sai so nho nhat 0.0
+Sai so trung binh 4.18126853674039e-08
+---------Frame: 111
+Sai so lon nhat 1.7881393432617188e-07
+Sai so nho nhat 0.0
+Sai so trung binh 4.180718797720652e-08
+---------Frame: 112
+Sai so lon nhat 1.7881393432617188e-07
+Sai so nho nhat 0.0
+Sai so trung binh 4.187340954962969e-08
+---------Frame: 113
+Sai so lon nhat 1.7881393432617188e-07
+Sai so nho nhat 0.0
+Sai so trung binh 4.188468147327108e-08
+---------Frame: 114
+Sai so lon nhat 1.7881393432617188e-07
+Sai so nho nhat 0.0
+Sai so trung binh 4.188351732005281e-08
+---------Frame: 115
+Sai so lon nhat 1.7881393432617188e-07
+Sai so nho nhat 0.0
+Sai so trung binh 4.23888244919605e-08
+---------Frame: 116
+Sai so lon nhat 1.7881393432617188e-07
+Sai so nho nhat 0.0
+Sai so trung binh 4.0449813241139055e-08
+---------Frame: 117
+Sai so lon nhat 1.7881393432617188e-07
+Sai so nho nhat 0.0
+Sai so trung binh 3.453788723264653e-08
+---------Frame: 118
+Sai so lon nhat 1.7881393432617188e-07
+Sai so nho nhat 0.0
+Sai so trung binh 3.4428072821255126e-08
+---------Frame: 119
+Sai so lon nhat 1.7881393432617188e-07
+Sai so nho nhat 0.0
+Sai so trung binh 3.443347319868432e-08
+---------Frame: 120
+Sai so lon nhat 1.7881393432617188e-07
+Sai so nho nhat 0.0
+Sai so trung binh 3.4518488721207376e-08
+---------Frame: 121
+Sai so lon nhat 1.7881393432617188e-07
+Sai so nho nhat 0.0
+Sai so trung binh 3.445319912821611e-08
+---------Frame: 122
+Sai so lon nhat 1.7881393432617188e-07
+Sai so nho nhat 0.0
+Sai so trung binh 3.446202729012132e-08
+---------Frame: 123
+Sai so lon nhat 1.7881393432617188e-07
+Sai so nho nhat 0.0
+Sai so trung binh 3.4491001770220464e-08
+---------Frame: 124
+Sai so lon nhat 1.7881393432617188e-07
+Sai so nho nhat 0.0
+Sai so trung binh 3.444666693515804e-08
+---------Frame: 125
+Sai so lon nhat 1.7881393432617188e-07
+Sai so nho nhat 0.0
+Sai so trung binh 3.4379728125107554e-08
+---------Frame: 126
+Sai so lon nhat 1.7881393432617188e-07
+Sai so nho nhat 0.0
+Sai so trung binh 3.4424159972938167e-08
+---------Frame: 127
+Sai so lon nhat 1.7881393432617188e-07
+Sai so nho nhat 0.0
+Sai so trung binh 3.4389235376390085e-08
+---------Frame: 128
+Sai so lon nhat 1.7881393432617188e-07
+Sai so nho nhat 0.0
+Sai so trung binh 3.4384255387623046e-08
+---------Frame: 129
+Sai so lon nhat 1.7881393432617188e-07
+Sai so nho nhat 0.0
+Sai so trung binh 3.4334132124058666e-08
+---------Frame: 130
+Sai so lon nhat 1.7881393432617188e-07
+Sai so nho nhat 0.0
+Sai so trung binh 3.4325271624564067e-08
+---------Frame: 131
+Sai so lon nhat 1.7881393432617188e-07
+Sai so nho nhat 0.0
+Sai so trung binh 3.4308262052541576e-08
+---------Frame: 132
+Sai so lon nhat 1.7881393432617188e-07
+Sai so nho nhat 0.0
+Sai so trung binh 3.4265835135253534e-08
+---------Frame: 133
+Sai so lon nhat 1.7881393432617188e-07
+Sai so nho nhat 0.0
+Sai so trung binh 3.430050103108645e-08
+---------Frame: 134
+Sai so lon nhat 1.7881393432617188e-07
+Sai so nho nhat 0.0
+Sai so trung binh 3.429403351320717e-08
+---------Frame: 135
+Sai so lon nhat 1.7881393432617188e-07
+Sai so nho nhat 0.0
+Sai so trung binh 3.4300759731801615e-08
+---------Frame: 136
+Sai so lon nhat 1.7881393432617188e-07
+Sai so nho nhat 0.0
+Sai so trung binh 3.426324812810182e-08
+---------Frame: 137
+Sai so lon nhat 1.7881393432617188e-07
+Sai so nho nhat 0.0
+Sai so trung binh 3.426399189265794e-08
+---------Frame: 138
+Sai so lon nhat 1.7881393432617188e-07
+Sai so nho nhat 0.0
+Sai so trung binh 3.42678724033855e-08
+---------Frame: 139
+Sai so lon nhat 1.7881393432617188e-07
+Sai so nho nhat 0.0
+Sai so trung binh 3.441950336006509e-08
+---------Frame: 140
+Sai so lon nhat 1.7881393432617188e-07
+Sai so nho nhat 0.0
+Sai so trung binh 3.055652465870177e-08
+---------Frame: 141
+Sai so lon nhat 1.7881393432617188e-07
+Sai so nho nhat 0.0
+Sai so trung binh 3.1110558893487905e-08
+---------Frame: 142
+Sai so lon nhat 1.7881393432617188e-07
+Sai so nho nhat 0.0
+Sai so trung binh 3.1094600293120794e-08
+---------Frame: 143
+Sai so lon nhat 1.7881393432617188e-07
+Sai so nho nhat 0.0
+Sai so trung binh 3.1105498060747376e-08
+---------Frame: 144
+Sai so lon nhat 1.7881393432617188e-07
+Sai so nho nhat 0.0
+Sai so trung binh 3.108751836104299e-08
+---------Frame: 145
+Sai so lon nhat 1.7881393432617188e-07
+Sai so nho nhat 0.0
+Sai so trung binh 3.109773703929224e-08
+---------Frame: 146
+Sai so lon nhat 1.7881393432617188e-07
+Sai so nho nhat 0.0
+Sai so trung binh 3.10820856460244e-08
+---------Frame: 147
+Sai so lon nhat 1.7881393432617188e-07
+Sai so nho nhat 0.0
+Sai so trung binh 3.109945093153025e-08
+---------Frame: 148
+Sai so lon nhat 1.7881393432617188e-07
+Sai so nho nhat 0.0
+Sai so trung binh 3.1095214707319326e-08
+---------Frame: 149
+Sai so lon nhat 1.7881393432617188e-07
+Sai so nho nhat 0.0
+Sai so trung binh 3.1084899016301885e-08
