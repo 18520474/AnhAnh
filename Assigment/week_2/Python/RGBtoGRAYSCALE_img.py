@@ -29,7 +29,7 @@ def printimg(img):
     gray_img = np.array(gray_img)  #create numpy array for storing gray img 
     for i in range(y):
         for j in range(x):
-            Green.write(np.binary_repr(  copy.copy(g[i][j]), width=8  ) + '\n')             #write Green.txt
+            Green.write(np.binary_repr(copy.copy(g[i][j]), width=8) + '\n')             #write Green.txt
             Red.write(np.binary_repr(copy.copy(r[i][j]), width=8) + '\n')              #write Red.txt
             Blue.write(np.binary_repr(copy.copy(b[i][j]), width=8) + '\n')             #write Blue.txt
             Gray.write(float_to_bin(copy.copy(gray_img[i][j])) + '\n')                 #write Gray.txt
