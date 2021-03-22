@@ -12,10 +12,10 @@ def status(y, i):
         print("procesing " + str(percent) + '%')
 
 Gray     = open("text/Gray.txt", "r")
-Gray_RTL = open("text/Result_2.txt", "r")
+Gray_RTL = open("text/Result.txt", "r")
 Compare = open("compare.txt", "w")
-x = 1155
-y = 1024
+x = 880
+y = 564
 python_img  = np.zeros((x , y))
 rtl_img     = np.zeros((x , y))
 count = 0

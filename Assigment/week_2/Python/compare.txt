@@ -1,3 +1,3 @@
-Sai so lon nhat 0.24966946244239807
+Sai so lon nhat 1.7881393432617188e-07
 Sai so nho nhat 0.0
-Sai so trung binh 0.09223064596264159
+Sai so trung binh 7.553250633259253e-08
