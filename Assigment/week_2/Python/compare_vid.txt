@@ -598,3 +598,8 @@ Sai so trung binh 3.1095214707319326e-08
 Sai so lon nhat 1.7881393432617188e-07
 Sai so nho nhat 0.0
 Sai so trung binh 3.1084899016301885e-08
+--------------FINAL--------------
+SAI SO LON NHAT 1.7881393432617188e-07
+SAI SO NHO NHAT 0.0
+SAI SO TRUNG BINH 5.170745915974191e-08
+--------------******--------------

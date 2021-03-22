@@ -23,6 +23,9 @@ rtl_video = np.zeros((y , x))
 print(python_video.shape)
 ###############
 Compare = open("compare_vid.txt", "w")
+sum_avg = 0
+max_all = 0
+min_all =  float('inf')
 ##############
 for i in range(number):
     python_path = "video/text/gray/gray_" + str(i) + ".txt"
@@ -51,6 +54,8 @@ for i in range(number):
             ###############
             python_video[y_][j]  = copy.copy(bin_to_float(python_frame_line))
             rtl_video[y_][j]     = copy.copy(bin_to_float(rtl_frame_line))
+            ###############
+            ###############
     python_frame.close()
     rtl_frame.close()
     cv2.imshow("python video", python_video)
@@ -59,6 +64,16 @@ for i in range(number):
     Compare.write("Sai so lon nhat " + str(max) + '\n')
     Compare.write("Sai so nho nhat " + str(min) + '\n')
     Compare.write("Sai so trung binh " + str(sum/count) + '\n')
+    sum_avg = sum_avg + sum/count
+    if (max_all < max):
+        max_all = max
+    if (min_all > min):
+        min_all = min
     if cv2.waitKey(25) & 0xFF == ord('q') : # press Q to exit
         break 
+Compare.write("--------------FINAL--------------" + '\n')
+Compare.write("SAI SO LON NHAT " + str(max_all) + '\n')
+Compare.write("SAI SO NHO NHAT " + str(min_all) + '\n')
+Compare.write("SAI SO TRUNG BINH" + str(sum_avg/number) + '\n')
+Compare.write("--------------******--------------" + '\n')
 cv2.destroyAllWindows()
