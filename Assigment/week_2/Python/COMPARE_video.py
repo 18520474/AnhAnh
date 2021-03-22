@@ -22,7 +22,7 @@ python_video = np.zeros((y , x))
 rtl_video = np.zeros((y , x))
 print(python_video.shape)
 ###############
-Compare = open("compare_vid.txt", "w")
+Compare = open("text/compare_vid.txt", "w")
 sum_avg = 0
 max_all = 0
 min_all =  float('inf')

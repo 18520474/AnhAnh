@@ -13,7 +13,7 @@ def status(y, i):
 
 Gray     = open("text/Gray.txt", "r")
 Gray_RTL = open("text/Result.txt", "r")
-Compare = open("compare.txt", "w")
+Compare  = open("text/compare_img.txt", "w")
 x = 880
 y = 564
 python_img  = np.zeros((x , y))
