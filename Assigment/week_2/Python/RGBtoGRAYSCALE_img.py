@@ -30,9 +30,9 @@ def printimg(img):
     for i in range(y):
         for j in range(x):
             Green.write(np.binary_repr(copy.copy(g[i][j]), width=8) + '\n')             #write Green.txt
-            Red.write(np.binary_repr(copy.copy(r[i][j]), width=8) + '\n')              #write Red.txt
-            Blue.write(np.binary_repr(copy.copy(b[i][j]), width=8) + '\n')             #write Blue.txt
-            Gray.write(float_to_bin(copy.copy(gray_img[i][j])) + '\n')                 #write Gray.txt
+            Red.write(  np.binary_repr(copy.copy(r[i][j]), width=8) + '\n')             #write Red.txt
+            Blue.write( np.binary_repr(copy.copy(b[i][j]), width=8) + '\n')             #write Blue.txt
+            Gray.write(float_to_bin(copy.copy(gray_img[i][j])) + '\n')                  #write Gray.txt
         status(y, i)                                                        #print process status
     if (x > 400) and (y > 400):
         cv2.imshow('origin', cv2.resize(img,      (400,400), interpolation = cv2.INTER_AREA))
