@@ -6,6 +6,7 @@
 ## resource:
 <img src="https://github.com/18520474/AnhAnh/blob/main/Assigment/week_2/RTL/img/2.png">
 
+## timing: fmax = 50mhz
 ## schematic: 
 <img src="https://github.com/18520474/AnhAnh/blob/main/Assigment/week_2/RTL/img/1.png">
 
