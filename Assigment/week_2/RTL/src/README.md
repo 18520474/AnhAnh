@@ -10,6 +10,9 @@
 ## schematic: 
 <img src="https://github.com/18520474/AnhAnh/blob/main/Assigment/week_2/RTL/img/1.png">
 
+## diagram
+<https://github.com/18520474/AnhAnh/blob/main/Assigment/week_2/RTL/img/diagram.png>
+
 ## top level module:
 ```verilog
 module rgb_to_gray_top(
