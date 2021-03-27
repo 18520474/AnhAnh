@@ -12,7 +12,7 @@ def status(y, i):
         print("procesing " + str(percent) + '%')
 
 Gray     = open("text/Gray.txt", "r")
-Gray_RTL = open("text/Result.txt", "r")
+Gray_RTL = open("/home/tuananh/Desktop/AnhAnh/Assigment/week_2/Result/text/Result.txt", "r")
 Compare  = open("text/compare_img.txt", "w")
 x = 880
 y = 564
