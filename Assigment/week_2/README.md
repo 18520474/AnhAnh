@@ -2,7 +2,7 @@
 # **RTL module**
 ## module convert RGB to grayscale using verilog accepts 8-bit RGB input (R, G, B) and output IEEE754 single-precision standard at GRAY port. 
 ## 5 stage pipeline
-<img src="https://github.com/18520474/AnhAnh/blob/main/Assigment/week_2/RTL/img/3.png">
+<img src="https://github.com/18520474/AnhAnh/blob/main/Assigment/week_2/RTL/img/Screenshot from 2021-03-30 13-04-39.png">
 
 ## resource:
 <img src="https://github.com/18520474/AnhAnh/blob/main/Assigment/week_2/RTL/img/2.png">
