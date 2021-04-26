@@ -9,6 +9,9 @@
 
   Tuy nhiên, trong thực tế Gradients thường sẽ có giá trị nhỏ dần khi đi xuống các layer thấp hơn. Dẫn đến kết quả là các cập nhật thực hiện bởi Gradients Descent không làm thay đổi nhiều weights của các layer đó và làm chúng không thể hội tụ và mạng sẽ không thu được kết quả tốt. Hiện tượng như vậy gọi là Vanishing Gradients.
 ![img](https://images.viblo.asia/full/2c64f987-0660-4f19-ba0e-caf75d6ed1c2.png)
+# Kiến trúc mạng ResNet
+  Cho nên giải pháp mà ResNet đưa ra là sử dụng kết nối "tắt" đồng nhất để xuyên qua một hay nhiều lớp. Một khối như vậy được gọi là một Residual Block, như trong hình sau :
+![image](https://user-images.githubusercontent.com/79899020/116036378-c8d78100-a690-11eb-85dc-d82d58ed5d93.png)
 
 
 
