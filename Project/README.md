@@ -11,7 +11,18 @@
 ![img](https://images.viblo.asia/full/2c64f987-0660-4f19-ba0e-caf75d6ed1c2.png)
 # Kiến trúc mạng ResNet
   Cho nên giải pháp mà ResNet đưa ra là sử dụng kết nối "tắt" đồng nhất để xuyên qua một hay nhiều lớp. Một khối như vậy được gọi là một Residual Block, như trong hình sau :
+
 ![image](https://user-images.githubusercontent.com/79899020/116036431-e60c4f80-a690-11eb-97d4-3be771e534bb.png)
+  
+  Ở các mạng khác dữ liệu được học từ output nhưng với mạng ResNet chúng được học từ F(X) và mục đích chính của ta là làm cho F(X) gần bằng không nhất để Input bằng Output.
+  
+  Resnet gồm 2 khối chính là
+##Identity Block (Input size == Output size)
+  ![image](https://user-images.githubusercontent.com/79899020/116036589-2075ec80-a691-11eb-8422-9ae873910d07.png)
+
+
+
+
 
 
 
