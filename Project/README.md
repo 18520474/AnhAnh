@@ -16,7 +16,7 @@
   
   Ở các mạng khác dữ liệu được học từ output nhưng với mạng ResNet chúng được học từ F(X) và mục đích chính của ta là làm cho F(X) gần bằng không nhất để Input bằng Output.
   
-  Resnet gồm 2 khối chính là
+# Resnet gồm 2 khối chính là
 ## Identity Block (Input size == Output size)
   ![image](https://user-images.githubusercontent.com/79899020/116036589-2075ec80-a691-11eb-8422-9ae873910d07.png)
 ## Convolutional Block (Input size != Output size)
