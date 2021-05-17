@@ -22,7 +22,7 @@
 ## Convolutional Block (Input size != Output size)
   ![image](https://user-images.githubusercontent.com/79899020/116036681-43a09c00-a691-11eb-8a75-7421a41112f2.png)
 # Mô tả chi tiết kiến trúc mạng nơ ron ResNet:
-  ![image](https://user-images.githubusercontent.com/79899020/118495872-cfb45980-b74d-11eb-9a0b-14a299e11115.png))
+  ![image](https://user-images.githubusercontent.com/79899020/118495872-cfb45980-b74d-11eb-9a0b-14a299e11115.png)
 Input: Bức ảnh 64x64x1
 
 Stage 1 : Tích chập (Conv2D) với 64 filters với shape(3,3), sử dụng stride (2,2). Relu, MaxPooling (3,3).
