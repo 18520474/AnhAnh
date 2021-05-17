@@ -23,19 +23,17 @@
   ![image](https://user-images.githubusercontent.com/79899020/116036681-43a09c00-a691-11eb-8a75-7421a41112f2.png)
 # Mô tả chi tiết kiến trúc mạng nơ ron ResNet:
   ![image](https://user-images.githubusercontent.com/79899020/118495872-cfb45980-b74d-11eb-9a0b-14a299e11115.png))
-Zero-padding : Input với (3,3)
+Input: Bức ảnh 64x64x1
 
-Stage 1 : Tích chập (Conv1) với 64 filters với shape(7,7), sử dụng stride (2,2). BatchNorm, MaxPooling (3,3).
+Stage 1 : Tích chập (Conv2D) với 64 filters với shape(3,3), sử dụng stride (2,2). Relu, MaxPooling (3,3).
 
-Stage 2 : Convolutiontal block sử dụng 3 filter với size 64x64x256, f=3, s=1. Có 2 Identity blocks với filter size 64x64x256, f=3.
+Stage 2 : Convolutiontal block sử dụng 128 filter với f=3, s=2. Có 2 Identity blocks với 128 filter, f=3, s=1.
 
-Stage 3 : Convolutional sử dụng 3 filter size 128x128x512, f=3,s=2. Có 3 Identity blocks với filter size 128x128x512, f=3.
+Stage 3 : Convolutiontal block sử dụng 256 filter với f=3, s=2. Có 2 Identity blocks với 256 filter, f=3, s=1.
 
-Stage 4 : Convolutional sử dụng 3 filter size 256x256x1024, f=3,s=2. Có 5 Identity blocks với filter size 256x256x1024, f=3.
+Stage 4 :
 
-Stage 5 :Convolutional sử dụng 3 filter size 512x512x2048, f=3,s=2. Có 2 Identity blocks với filter size 512x512x2048, f=3.
-
-The 2D Average Pooling : sử dụng với kích thước (2,2).
+The 2D Average Pooling : sử dụng với kích thước (3,3), s=2.
 
 The Flatten.
 
