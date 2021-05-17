@@ -22,7 +22,7 @@
 ## Convolutional Block (Input size != Output size)
   ![image](https://user-images.githubusercontent.com/79899020/116036681-43a09c00-a691-11eb-8a75-7421a41112f2.png)
 # Mô tả chi tiết kiến trúc mạng nơ ron ResNet:
-  ![img](https://images.viblo.asia/fe5b21e5-3ad3-4419-93e0-7aa77a662bdd.png)
+  ![image](https://user-images.githubusercontent.com/79899020/118495872-cfb45980-b74d-11eb-9a0b-14a299e11115.png))
 Zero-padding : Input với (3,3)
 
 Stage 1 : Tích chập (Conv1) với 64 filters với shape(7,7), sử dụng stride (2,2). BatchNorm, MaxPooling (3,3).
@@ -40,8 +40,7 @@ The 2D Average Pooling : sử dụng với kích thước (2,2).
 The Flatten.
 
 Fully Connected (Dense) : sử dụng softmax activation.
-# Mô hình ResNet
-![image](https://user-images.githubusercontent.com/79899020/116036933-9a0dda80-a691-11eb-983d-e187ec26c022.png)
+
 
 
 
