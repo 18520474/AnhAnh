@@ -1,0 +1,9 @@
+module top(
+    input clk,
+    input rst,
+    input input_valid,
+    input sof,
+    input [31:0] d_in,
+    output output_valid,
+    output [9:0] d_out
+);

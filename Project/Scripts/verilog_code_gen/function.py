@@ -1,62 +1,104 @@
-def conv_code_gen(prev_layer_name, layer_name, padding, stride, input_depth, output_depth, input_x, conv_ins_name, sum_ins_name, weight_path):
-    out =  "wire [31:0] " + layer_name + "_output[" + str(output_depth - 1) + ":0]; \n"
-    out += "wire        " + layer_name + "_o_sof;         \n"
-    out += "wire        " + layer_name + "_output_valid;  \n"
-    if(input_depth != 1):
+import copy
+def port_declare():
+    port_info = open("module/port_declare.txt", "r")
+    return port_info.read()
+
+def conv2d(input_depth = 2, output_depth = 5, stride = 2, padding = 1, input_x = 5, input_y = 5, weight_path = "layer_1/", layer_name = "layer_1", prev_layer_name = "layer_0"):
+    conv2d = open("module/conv2d.txt", "r")
+    my_conv2d = conv2d.read() 
+    out  = "wire [31:0] " + layer_name + "_output[" + str(output_depth - 1) + ":0];    \n"  
+    out += "wire " + layer_name + "_o_sof;                                             \n"
+    out += "wire " + layer_name + "_output_valid;                                      \n"
+    #parameter
+    if input_depth == 1:                                  
         for i in range(output_depth):
-            out += "wire [31:0] " + layer_name + "_add_bus_" + str(i) + "[" + str(input_depth - 1) + ":0];   \n" 
-            for y in range(input_depth):
-                layer_weight_path = '"' + weight_path + "_" + str(i) + "_" +  str(y) + ".txt" + '"'
-                out += conv_ins_name + " #(" + layer_weight_path + ", " + str(stride) + ", " + str(padding) + ", "+ str(input_x) + ", " + str(input_x) + ") " + layer_name + '_' + str(i) + "_" + str(y) + '(' + "\n"
-                out += "    .clk(clk),                                                               \n"
-                out += "    .rst(rst),                                                               \n"
-                out += "    .load(load),                                                             \n"
-                out += "    .input_valid(" + prev_layer_name + "_output_valid),                      \n"
-                out += "    .sof("         + prev_layer_name + "_o_sof),                             \n"
-                out += "    .d_in("        + prev_layer_name + "_output["  + str(y) + "]),           \n"
-                out += "    .d_out("       + layer_name + "_add_bus_" + str(i) + "[" + str(y) + "]), \n"
-                if(i == 0 and y == 0):
-                    out += "    .output_valid(" + layer_name + "_output_valid),                      \n"
-                    out += "    .o_sof("        + layer_name + "_o_sof),                             \n"
-                out += ");                                                                           \n"
-            out += sum_ins_name + " " + layer_name + "_sum_"        + str(i) + "(                    \n"
-            out += "    .out("        + layer_name + "_output["     + str(i) + "]),                  \n" 
-            for z in range(input_depth):
-                out += "    .in_" + str(z) + "(" + layer_name + "_add_bus_" + str(i) + "[" + str(z) + "]), \n" 
-            out += "); \n"
+            inst = my_conv2d
+            inst = inst.replace("instance_name", layer_name + "_conv2d_" + str(i), 1)
+            inst = inst.replace("weight_path", weight_path + "_" + str(i) + ".txt", 1)
+            inst = inst.replace("stride", str(stride), 1)
+            inst = inst.replace("padding", str(padding), 1)
+            inst = inst.replace("input_x", str(input_x), 1)
+            inst = inst.replace("input_y", str(input_y), 1)
+            inst = inst.replace("_clk", "clk", 1)
+            inst = inst.replace("_rst", "rst", 1)
+            inst = inst.replace("_input_valid", prev_layer_name + "_output_valid", 1)
+            inst = inst.replace("_sof", prev_layer_name + "_o_sof", 1) 
+            inst = inst.replace("_d_in", "d_in", 1)
+            inst = inst.replace("_d_out", layer_name + "_output[" + str(i) + "]", 1)
+            if i == 0:
+                inst = inst.replace("_o_sof_", layer_name + "_o_sof", 1)  
+                inst = inst.replace("_output_valid_", layer_name + "_output_valid", 1) 
+                out += inst
+            else:
+                inst = inst.replace("_o_sof_","", 1)  
+                inst = inst.replace("_output_valid_","", 1) 
+                out += inst 
     else:
-        for i in range(output_depth): 
-            layer_weight_path = layer_name + str(i) + ".txt"
-            out += conv_ins_name + " #(" + layer_weight_path + ", " + str(stride) + ", " + str(padding) + ", "+ str(input_x) + ", " + str(input_x) + ") " + layer_name + "_" + str(i) + '(' + "\n"
-            out += "    .clk(clk),                                            \n"
-            out += "    .rst(rst),                                            \n"
-            out += "    .load(load),                                          \n"
-            out += "    .sof(sof),                                            \n"
-            out += "    .load_success(load_success),                          \n"
-            out += "    .d_in(d_in),                                          \n"
-            out += "    .input_valid(input_valid),                            \n"
-            out += "    .d_out(" + layer_name + "_output[" + str(i) + "]),    \n"
-            if(i==0):
-                out += "    .output_valid(" + layer_name + "_output_valid),   \n"
-                out += "    .o_sof("        + layer_name + "_o_sof),          \n"
-            out += ");                                                        \n"
+        out += "wire " + layer_name + "_output_valid_affter_conv;                                             \n"
+        for i in range(output_depth):
+            out  += "wire [31:0] " + layer_name + "_" + str(i) +"_addbus_[" + str(input_depth - 1) + ":0];    \n"  
+            for y in range(input_depth):
+                inst = my_conv2d
+                inst = inst.replace("instance_name", layer_name + "_conv2d_" + str(i) + "_" + str(y), 1)
+                inst = inst.replace("weight_path", weight_path + "_" + str(i) + "_" + str(y) + ".txt", 1)
+                inst = inst.replace("stride", str(stride), 1)
+                inst = inst.replace("padding", str(padding), 1)
+                inst = inst.replace("input_x", str(input_x), 1)
+                inst = inst.replace("input_y", str(input_y), 1)
+                inst = inst.replace("_clk", "clk", 1)
+                inst = inst.replace("_rst", "rst", 1)
+                inst = inst.replace("_input_valid", prev_layer_name + "_output_valid", 1)
+                inst = inst.replace("_sof", prev_layer_name + "_o_sof", 1) 
+                inst = inst.replace("_d_in", "d_in", 1)
+                inst = inst.replace("_d_out", layer_name + "_" +str(i) + "_addbus_[" + str(y) + "]" , 1)
+                if i == 0 and y == 0:
+                    inst = inst.replace("_o_sof_", layer_name + "_o_sof", 1)  
+                    inst = inst.replace("_output_valid_", layer_name + "_output_valid_affter_conv", 1) 
+                    out += inst
+                else:
+                    inst = inst.replace("_o_sof_","", 1)  
+                    inst = inst.replace("_output_valid_","", 1) 
+                    out += inst 
+            out += "sum_" + str(input_depth) + " " + layer_name + "_sum_" + str(i) + "( \n"
+            out += "        .clk(clk), \n"
+            out += "        .clk(rst), \n"
+            out += "        .input_valid(" + layer_name + "_output_valid_affter_conv), \n"
+            if i == 0:
+                out += "        .output_valid(" + layer_name + "_output_valid), \n"
+            else:
+                out += "        .output_valid(), \n"
+            out += "        .d_out(" + layer_name + "_output[" + str(i) + "]), \n"
+            for z in range(input_depth):
+                out += "        .d_in(" + layer_name + "_" + str(i) + "_addbus_[" + str(z) + "]), \n"
+            out += "); \n"
     return out
 
-def polling_code_gen(prev_layer_name, layer_name, padding, stride, input_depth, output_depth, input_x, polling_ins_name):
-    ins_name =  "wire [31:0] " + layer_name + "_output[" + str(output_depth - 1) + ":0]; \n"
-    ins_name += "wire       "  + layer_name + "_o_sof;                                   \n"
-    ins_name += "wire       "  + layer_name + "_output_valid;                            \n"
-    for i in range(output_depth):
-        ins_name += polling_ins_name + " #(" + str(stride) + ", " + str(padding) + ", "+ str(input_x) + ", " + str(input_x) + ") " + layer_name +'_' + str(i) + '(' + "\n"
-        ins_name += "    .clk(clk),                                                      \n"
-        ins_name += "    .rst(rst),                                                      \n"
-        ins_name += "    .load(load),                                                    \n"
-        ins_name += "    .input_valid(" + prev_layer_name + "_output_valid),             \n"
-        ins_name += "    .sof("         + prev_layer_name + "_o_sof),                    \n"
-        ins_name += "    .d_in("        + prev_layer_name + "_output[" + str(i) + "]),   \n"
-        ins_name += "    .d_out("       + layer_name + "_output[" + str(i) + "]),        \n" 
-        if(i==0):
-            ins_name += "    .output_valid(" + layer_name + "_output_valid),             \n"
-            ins_name += "    .o_sof("        + layer_name + "_o_sof),                    \n"
-        ins_name += ");                                                                  \n"
-    return ins_name
+def poling(input_depth = 2, stride = 2, padding = 1, input_x = 5, input_y = 5, layer_name = "my_polling", prev_layer_name = "layer_0"):
+    polling2d = open("module/polling2d.txt", "r")
+    polling = polling2d.read()
+    out  = "wire [31:0] " + layer_name + "_output[" + str(input_depth - 1) + ":0];    \n"  
+    out += "wire " + layer_name + "_o_sof;                                            \n"
+    out += "wire " + layer_name + "_output_valid;                                     \n"
+    #parameter                                
+    for i in range(input_depth):
+        inst = polling
+        inst = inst.replace("instance_name", layer_name + "_polling_" + str(i), 1)
+        inst = inst.replace("stride", str(stride), 1)
+        inst = inst.replace("padding", str(padding), 1)
+        inst = inst.replace("input_x", str(input_x), 1)
+        inst = inst.replace("input_y", str(input_y), 1)
+        inst = inst.replace("_clk", "clk", 1)
+        inst = inst.replace("_rst", "rst", 1)
+        inst = inst.replace("_input_valid", prev_layer_name + "_output_valid", 1)
+        inst = inst.replace("_sof", prev_layer_name + "_o_sof", 1) 
+        inst = inst.replace("_d_in", prev_layer_name + "_output[" + str(i) + "]", 1)
+        inst = inst.replace("_d_out", layer_name + "_output[" + str(i) + "]", 1)
+        if i == 0:
+            inst = inst.replace("_o_sof_", layer_name + "_o_sof", 1)  
+            inst = inst.replace("_output_valid_", layer_name + "_output_valid", 1) 
+            out += inst
+        else:
+            inst = inst.replace("_o_sof_","", 1)  
+            inst = inst.replace("_output_valid_","", 1) 
+            out += inst 
+    return out
