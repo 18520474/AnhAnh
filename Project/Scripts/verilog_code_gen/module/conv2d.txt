@@ -2,6 +2,8 @@ conv2d #("weight_path", stride, padding, input_x, input_y) instance_name(
 	.clk(_clk),
 	.rst(_rst),
 	.input_valid(_input_valid),
+	.load(_load),
+	.load_success(_load_success),
 	.output_valid(_output_valid_),
 	.sof(_sof),
 	.o_sof(_o_sof_),

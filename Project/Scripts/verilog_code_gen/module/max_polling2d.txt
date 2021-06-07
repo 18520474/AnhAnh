@@ -1,0 +1,10 @@
+max_pooling2d #(stride, padding, input_x, input_y) instance_name(
+	.clk(_clk),
+	.rst(_rst),
+	.sof(_sof),
+	.d_in(_d_in),
+	.input_valid(_input_valid),
+	.o_sof(_o_sof_),
+	.output_valid(_output_valid_),
+	.d_out(_d_out)
+);
