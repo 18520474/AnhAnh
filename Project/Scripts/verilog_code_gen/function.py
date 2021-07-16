@@ -24,6 +24,7 @@ def conv2d(input_depth = 2, output_depth = 5, stride = 2, padding = 1, input_x =
             inst = my_conv2d
             inst = inst.replace("instance_name", layer_name + "_conv2d_" + str(i), 1)
             inst = inst.replace("weight_path", weight_path + str(i) + ".txt", 1)
+            inst = inst.replace("is_relu", "1 /*use relu*/", 1)
             inst = inst.replace("stride", str(stride), 1)
             inst = inst.replace("padding", str(padding), 1)
             inst = inst.replace("input_x", str(input_x), 1)
@@ -55,6 +56,7 @@ def conv2d(input_depth = 2, output_depth = 5, stride = 2, padding = 1, input_x =
                 inst = my_conv2d
                 inst = inst.replace("instance_name", "conv2d_" + str(i) + "_" + str(y), 1)
                 inst = inst.replace("weight_path", weight_path + str(i) + "_" + str(y) + ".txt", 1)
+                inst = inst.replace("is_relu", "0 /*dont use relu*/", 1)
                 inst = inst.replace("stride", str(stride), 1)
                 inst = inst.replace("padding", str(padding), 1)
                 inst = inst.replace("input_x", str(input_x), 1)
@@ -63,7 +65,7 @@ def conv2d(input_depth = 2, output_depth = 5, stride = 2, padding = 1, input_x =
                 inst = inst.replace("_rst", "rst", 1)
                 inst = inst.replace("_input_valid", "input_valid", 1)
                 inst = inst.replace("_load", "load", 1)
-                inst = inst.replace("_sof", "o_sof", 1) 
+                inst = inst.replace("_sof", "sof", 1) 
                 inst = inst.replace("_d_in", "d_in[" + str(y) + "]", 1)
                 inst = inst.replace("_d_out","_" + str(i) + "_addbus_[" + str(y) + "]" , 1)
                 inst = inst.replace("_o_sof_", "", 1)  

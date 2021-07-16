@@ -1,0 +1,1 @@
+# run src.py in order to generate rtl layer verilog code

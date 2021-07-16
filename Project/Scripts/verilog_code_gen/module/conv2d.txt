@@ -1,4 +1,4 @@
-conv2d #("weight_path", stride, padding, input_x, input_y) instance_name(
+conv2d #("weight_path", is_relu, stride, padding, input_x, input_y) instance_name(
 	.clk(_clk),
 	.rst(_rst),
 	.input_valid(_input_valid),
