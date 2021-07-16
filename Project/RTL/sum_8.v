@@ -98,8 +98,13 @@ always @ (posedge clk or posedge rst) begin
         stage_3_reg <= 32'd0;
         output_valid <= 0;
     end else begin
-        stage_3_reg <= (stage_3_add[31]) ? 32'd0 : stage_3_add;
-        output_valid <= stage_2_output_valid;
+        if(input_x == 69) begin
+            stage_3_reg <= stage_3_add;
+            output_valid <= stage_2_output_valid;
+        end else begin
+            stage_3_reg <= (stage_3_add[31]) ? 32'd0 : stage_3_add;
+            output_valid <= stage_2_output_valid;
+        end
     end
 end
 //assign data_out = stage_3_reg;

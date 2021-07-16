@@ -88,7 +88,8 @@ module line_buffer_control_stride_1_padding_same
 		if(rst || sof) begin
 			busy <= 0;
 		end else if(input_valid_count == input_x*input_y - 1 && input_valid) begin
-			busy <= 1;
+			//busy <= 1;
+			busy <= 0; 
 		end else if(x == input_x && y == input_y - 1) begin
 			busy <= 0;
 		end
