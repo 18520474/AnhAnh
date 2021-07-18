@@ -73,8 +73,14 @@ always @ (posedge clk or posedge rst) begin
         output_valid <= 1'b0;
         data_out <= 32'd0;
     end else if(stage_1_output_valid) begin
-        output_valid <= 1'b1;
-        data_out <= (stage_2_add[31]) ? 32'd0 : stage_2_add;
+        if(input_x == 69) begin
+            output_valid <= 1'b1;
+            data_out <= stage_2_add;
+        end else begin 
+            output_valid <= 1'b1;
+            data_out <= (stage_2_add[31]) ? 32'd0 : stage_2_add;
+        end
+        
     end else begin
         output_valid <= 1'b0;
         data_out <= 32'd0;

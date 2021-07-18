@@ -6,9 +6,8 @@ module top
 	input input_valid,
 	input sof,
 	input [31:0] d_in,
-	output o_sof,
 	output output_valid,
-	output [31:0] d_out[15:0],
+	output [9:0] d_out,
 	output load_weight_done
 );
 	wire layer_0_o_sof, layer_0_output_valid;
@@ -123,10 +122,40 @@ module top
 		.rst(rst),                                             
 		.input_valid(layer_6_output_valid),                                             
 		.sof(layer_6_o_sof),                                             
-		.o_sof(o_sof),                                             
-		.output_valid(output_valid),                                      
+		.o_sof(avg_polling_o_sof),                                             
+		.output_valid(avg_polling_output_valid),                                      
 		.d_out(avg_polling_d_out),    
 		.d_in(layer_6_d_out)  
 	);
-	assign d_out = avg_polling_d_out;	
+	wire fc_output_valid;
+	wire [31:0] fc_d_out[9:0];
+	Fully_Connected FC(
+		.clk(clk),
+		.rst(rst),
+		.load(load),
+		.input_valid(avg_polling_output_valid),
+		.output_valid(fc_output_valid),
+		.d_in(avg_polling_d_out),
+		.d_out(fc_d_out)
+	);
+	//assign d_out = fc_d_out;
+	//assign output_valid = fc_output_valid;
+	wire softmax_output_valid;
+	wire [31:0] softmax_d_out[9:0];
+	softmax my_softmax(
+		.clk(clk),
+		.resetn(rst),
+		.valid_in(fc_output_valid),
+		.d_in(fc_d_out),
+		.percent(softmax_d_out),
+		.valid_out(softmax_output_valid)
+    );
+	hotone_encoder encoder(
+		.clk(clk),
+		.rst(rst),
+		.input_valid(softmax_output_valid),
+		.output_valid(output_valid),
+		.d_in(softmax_d_out),
+		.d_out(d_out)
+	);
 endmodule
