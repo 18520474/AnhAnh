@@ -34,7 +34,7 @@ module filter_apply
 	reg  [31:0] stage_1_input[0:8];
 	wire [31:0] stage_1_mul_add[0:8];
 	reg stage_1_input_valid;
-	always @(negedge clk or negedge rst) begin
+	always @(negedge clk or posedge rst) begin
 		if(rst) begin
 			stage_1_input[0] <= 32'd0;
 			stage_1_input[1] <= 32'd0;

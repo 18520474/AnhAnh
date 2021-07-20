@@ -78,16 +78,16 @@ module softmax(
             s2 <= 0;
         end
         else if(s1 == 1'b1)begin
-            r0 <= 2.71828182846**$bitstoreal(num0);
-            r1 <= 2.71828182846**$bitstoreal(num1);
-            r2 <= 2.71828182846**$bitstoreal(num2);
-            r3 <= 2.71828182846**$bitstoreal(num3);
-            r4 <= 2.71828182846**$bitstoreal(num4);
-            r5 <= 2.71828182846**$bitstoreal(num5);
-            r6 <= 2.71828182846**$bitstoreal(num6);
-            r7 <= 2.71828182846**$bitstoreal(num7);
-            r8 <= 2.71828182846**$bitstoreal(num8);
-            r9 <= 2.71828182846**$bitstoreal(num9);
+            r0 <= 2.71828182846**$bitstoreal(num[0]);
+            r1 <= 2.71828182846**$bitstoreal(num[1]);
+            r2 <= 2.71828182846**$bitstoreal(num[2]);
+            r3 <= 2.71828182846**$bitstoreal(num[3]);
+            r4 <= 2.71828182846**$bitstoreal(num[4]);
+            r5 <= 2.71828182846**$bitstoreal(num[5]);
+            r6 <= 2.71828182846**$bitstoreal(num[6]);
+            r7 <= 2.71828182846**$bitstoreal(num[7]);
+            r8 <= 2.71828182846**$bitstoreal(num[8]);
+            r9 <= 2.71828182846**$bitstoreal(num[9]);
             s2 <= s1;
         end
         else begin
