@@ -16,7 +16,7 @@ initial begin
 end
 /*---------------- RESET --------------------------*/
 initial begin
-    file_in <= $fopen("input/9.txt","r"); // Read image file   
+    file_in <= $fopen("input/6_4.txt","r"); // Read image file   
     file_out <= $fopen("output/result.txt", "w");  //write file
     first = 1;
     rst = 1;

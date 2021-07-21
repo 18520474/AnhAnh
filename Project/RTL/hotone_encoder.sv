@@ -86,6 +86,7 @@ module hotone_encoder
 			stage_2_d_in_9 <= stage_1_d_in_9;
 		end 
 	end
+	/*bug*/
 	always @ (posedge clk or posedge rst) begin
 		if(rst) begin
 			output_valid <= 1'b0;
@@ -93,25 +94,25 @@ module hotone_encoder
 		end else begin
 			output_valid <= max_output_valid;
 			if(max_output == stage_2_d_in_0)
-				d_out <= 10'b0000000001;
-			else if(max_output == stage_2_d_in_1)
-				d_out <= 10'b0000000010;
-			else if(max_output == stage_2_d_in_2)
-				d_out <= 10'b0000000100;
-			else if(max_output == stage_2_d_in_3)
-				d_out <= 10'b0000001000;
-			else if(max_output == stage_2_d_in_4)
-				d_out <= 10'b0000010000;
-			else if(max_output == stage_2_d_in_5)
-				d_out <= 10'b0000100000;
-			else if(max_output == stage_2_d_in_6)
-				d_out <= 10'b0001000000;
-			else if(max_output == stage_2_d_in_7)
-				d_out <= 10'b0010000000;
-			else if(max_output == stage_2_d_in_8)
-				d_out <= 10'b0100000000;
-			else if(max_output == stage_2_d_in_9)
 				d_out <= 10'b1000000000;
+			else if(max_output == stage_2_d_in_1)
+				d_out <= 10'b0100000000;
+			else if(max_output == stage_2_d_in_2)
+				d_out <= 10'b0010000000;
+			else if(max_output == stage_2_d_in_3)
+				d_out <= 10'b0001000000;
+			else if(max_output == stage_2_d_in_4)
+				d_out <= 10'b0000100000;
+			else if(max_output == stage_2_d_in_5)
+				d_out <= 10'b0000010000;
+			else if(max_output == stage_2_d_in_6)
+				d_out <= 10'b0000001000;
+			else if(max_output == stage_2_d_in_7)
+				d_out <= 10'b0000000100;
+			else if(max_output == stage_2_d_in_8)
+				d_out <= 10'b0000000010;
+			else if(max_output == stage_2_d_in_9)
+				d_out <= 10'b0000000001;
 		end
 	end	
 endmodule

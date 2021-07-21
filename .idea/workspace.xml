@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="42a7da11-7dc5-4022-9543-6f95a8b41b81" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/Project/RTL/hotone_encoder.sv" beforeDir="false" afterPath="$PROJECT_DIR$/Project/RTL/hotone_encoder.sv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/RTL/input/0.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Project/RTL/input/0.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/RTL/input/1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Project/RTL/input/1.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/RTL/input/2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Project/RTL/input/2.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/RTL/input/3.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Project/RTL/input/3.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/RTL/input/4.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Project/RTL/input/4.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/RTL/input/5.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Project/RTL/input/5.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/RTL/input/6.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Project/RTL/input/6.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/RTL/input/7.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Project/RTL/input/7.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/RTL/input/8.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Project/RTL/input/8.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/RTL/input/9.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Project/RTL/input/9.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/RTL/output/result.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Project/RTL/output/result.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/RTL/top.sv" beforeDir="false" afterPath="$PROJECT_DIR$/Project/RTL/top.sv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/RTL/top_tb.sv" beforeDir="false" afterPath="$PROJECT_DIR$/Project/RTL/top_tb.sv" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1vc44DZb0SjIDq7VkyGFuchVSZE" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="42a7da11-7dc5-4022-9543-6f95a8b41b81" name="Default Changelist" comment="" />
+      <created>1626847853194</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1626847853194</updated>
+    </task>
+    <servers />
+  </component>
+</project>

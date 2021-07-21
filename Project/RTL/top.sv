@@ -140,22 +140,56 @@ module top
 	);
 	//assign d_out = fc_d_out;
 	//assign output_valid = fc_output_valid;
-	wire softmax_output_valid;
-	wire [31:0] softmax_d_out[9:0];
-	softmax my_softmax(
-		.clk(clk),
-		.resetn(rst),
-		.valid_in(fc_output_valid),
+	wire [31:0] scale_d_out[9:0];
+	scale m_scale(
 		.d_in(fc_d_out),
-		.percent(softmax_d_out),
-		.valid_out(softmax_output_valid)
+		.d_out(scale_d_out)
+	);
+
+	wire softmax_output_valid;
+	// wire [31:0] softmax_d_out[9:0];
+	// softmax my_softmax(
+	// 	.clk(clk),
+	// 	.resetn(rst),
+	// 	.valid_in(fc_output_valid),
+	// 	.d_in(fc_d_out),
+	// 	.percent(softmax_d_out),
+	// 	.valid_out(softmax_output_valid)
+    // );
+	wire [31:0] soft_d_out[9:0];
+	softmax my_soft(
+    .clk(clk),
+    .resetn(rst),
+    .valid_in(fc_output_valid),
+    .class0(scale_d_out[0]),
+	.class1(scale_d_out[1]),
+	.class2(scale_d_out[2]),
+	.class3(scale_d_out[3]),
+	.class4(scale_d_out[4]),
+	.class5(scale_d_out[5]),
+	.class6(scale_d_out[6]),
+	.class7(scale_d_out[7]),
+	.class8(scale_d_out[8]),
+	.class9(scale_d_out[9]),
+    .percent0(soft_d_out[0]),
+	.percent1(soft_d_out[1]),
+	.percent2(soft_d_out[2]),
+	.percent3(soft_d_out[3]),
+	.percent4(soft_d_out[4]),
+	.percent5(soft_d_out[5]),
+	.percent6(soft_d_out[6]),
+	.percent7(soft_d_out[7]),
+	.percent8(soft_d_out[8]),
+	.percent9(soft_d_out[9]),
+    .valid_out(softmax_output_valid)
     );
+
 	hotone_encoder encoder(
 		.clk(clk),
 		.rst(rst),
 		.input_valid(softmax_output_valid),
 		.output_valid(output_valid),
-		.d_in(softmax_d_out),
+		.d_in(soft_d_out),
 		.d_out(d_out)
 	);
 endmodule
