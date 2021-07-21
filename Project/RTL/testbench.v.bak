@@ -1,4 +1,0 @@
-`timescale 1ps/1ns
-module testbench();
-
-endmodule
