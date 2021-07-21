@@ -1,3 +1,4 @@
+#create model code
 import numpy as np # linear algebra
 import pandas as pd # data processing, CSV file I/O (e.g. pd.read_csv)
 import numpy as np
@@ -27,11 +28,15 @@ def ResNet(input_shape = (64, 64, 1), classes = 10):
     X = Conv2D(activation = 'relu', name = 'conv2d_0', filters= 4, kernel_size=(3,3), strides=(2,2),padding='valid', use_bias = False, kernel_initializer='he_normal')(X_input)
     X = MaxPooling2D(name = 'max', pool_size = (3, 3), strides=(2, 2))(X)
     X = Conv2D(activation = 'relu', name = 'conv2d_1', filters= 8, kernel_size=(3,3), strides=(2,2),padding='valid', use_bias = False, kernel_initializer='he_normal')(X)
+    short_cut_0 = X
     X = Conv2D(activation = 'relu', name = 'conv2d_2', filters= 8, kernel_size=(3,3), strides=(1,1),padding='same', use_bias = False, kernel_initializer='he_normal')(X)
     X = Conv2D(activation = 'relu', name = 'conv2d_3', filters= 8, kernel_size=(3,3), strides=(1,1),padding='same', use_bias = False, kernel_initializer='he_normal')(X)
+    X = Add()([X, short_cut_0])
     X = Conv2D(activation = 'relu', name = 'conv2d_4', filters= 16, kernel_size=(3,3), strides=(2,2),padding='valid', use_bias = False, kernel_initializer='he_normal')(X)     
+    short_cut_1 = X
     X = Conv2D(activation = 'relu', name = 'conv2d_5', filters= 16, kernel_size=(3,3), strides=(1,1),padding='same', use_bias = False, kernel_initializer='he_normal')(X)
     X = Conv2D(activation = 'relu', name = 'conv2d_6', filters= 16, kernel_size=(3,3), strides=(1,1),padding='same', use_bias = False, kernel_initializer='he_normal')(X)
+    X = Add()([X, short_cut_1])
     X = AveragePooling2D(name = 'avg', pool_size = (3, 3), strides=(1, 1))(X)
     # output layer
     X = Flatten()(X)
